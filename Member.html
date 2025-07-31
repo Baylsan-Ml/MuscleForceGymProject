@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="./assets/img/public/logo-nobg.webp" />
+    <!-- CSS Bootstrap -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- costume CSS -->
+    <link rel="stylesheet" href="./assets/main.css">
+
+  </head>
+
+
+
+
+  <body class="Member-body">
+    <div class="Member-body-bg"></div>
+        <nav class="navbar navbar-expand-lg position-sticky sticky-top top-0 px-3">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/img/public/logo-nobg.webp" width="25%" alt="...">
+      </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <svg xmlns="http://www.w3.org/2000/svg" height="20" width="25" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#000000" d="M96 64c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 160 0 64 0 160c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-64-32 0c-17.7 0-32-14.3-32-32l0-64c-17.7 0-32-14.3-32-32s14.3-32 32-32l0-64c0-17.7 14.3-32 32-32l32 0 0-64zm448 0l0 64 32 0c17.7 0 32 14.3 32 32l0 64c17.7 0 32 14.3 32 32s-14.3 32-32 32l0 64c0 17.7-14.3 32-32 32l-32 0 0 64c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-160 0-64 0-160c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32zM416 224l0 64-192 0 0-64 192 0z"/></svg>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./Member.html">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#WhoWeAre">Who We Are</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Gallery"  rel="noopener noreferrer">Gallery</a>
+        </li>
+        <li class="nav-item dropdown" data-bs-theme="dark">
+          <a class="nav-link dropdown-toggle" href="#Classes" rel="noopener noreferrer" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Classes
+          </a>
+          <ul class="dropdown-menu bg-black">
+            <li><a class="dropdown-item " href="Classes.html" rel="noopener noreferrer" target="_blank" >Cardio</a></li>
+            <li><a class="dropdown-item" href="Classes.html" rel="noopener noreferrer" target="_blank">Weight Lifting</a></li>
+            <li><a class="dropdown-item" href="Classes.html" rel="noopener noreferrer" target="_blank"></a></li>
+            <li><a class="dropdown-item" href="Classes.html" rel="noopener noreferrer" target="_blank">Pilates</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Classes.html" rel="noopener noreferrer" target="_blank">HIIT</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#programs"  rel="noopener noreferrer">Programs</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#Membership" rel="noopener noreferrer" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Membership
+          </a>
+          <ul class="dropdown-menu bg-black" data-bs-theme="dark">
+            <li><a class="dropdown-item" href="#Membership" rel="noopener noreferrer" target="_blank">Daily</a></li>
+            <li><a class="dropdown-item" href="#Membership" rel="noopener noreferrer" target="_blank">3 Days/Week</a></li>
+            <li><a class="dropdown-item" href="#Membership" rel="noopener noreferrer" target="_blank">One Month</a></li>
+            <li><a class="dropdown-item" href="#Membership" rel="noopener noreferrer" target="_blank">Three Months</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="./Offers.html" rel="noopener noreferrer" target="_blank">Offers</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+
+      <form class="d-flex" role="search" data-bs-theme="dark">
+        <input class="search-btn form-control me-2 bg-black"  data-bs-theme="dark" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-sm btn-outline-secondary bg-black " type="button"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#fafafa" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></button>
+      </form>
+
+      <ul class="navbar-nav mb-2 ms-5">
+      <li class="nav-item dropdown" data-bs-theme="dark">
+          <a class="nav-link dropdown-toggle" href="#" rel="noopener noreferrer" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sign
+          </a>
+          <ul class="dropdown-menu bg-black " data-bs-theme="dark">
+            <li><a class="dropdown-item" href="./SignUp.html" target="_blank" rel="noopener noreferrer" target="_blank">SignUp</a></li>
+            <li><a class="dropdown-item" href="./Login.html" target="_blank" rel="noopener noreferrer" >Login</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+  
+</nav>
+    <header class="Header">
+          <div class="header text-center vh-100">
+            </div>
+    </header>
+    <main>
+      
+      <section class="quote-section py-5">
+        <div class="container-fluid">
+          <div class="quote d-flex gap-3 justify-content-center">
+          <p class="quote-text-1 text-light mainFont">"Hustle for</p>
+          <p class="quote-text-2 text-light mainFont">that Muscle"</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="WhoWeAre-section py-5" id="WhoWeAre">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="WhoWeAre-section-content">
+              <div class="who-we-are-wrapper">
+            <h2 class="who-we-are-heading mainFont">Who We Are</h2>
+            <h2 class="behind-title who-we-are-title mainFont">Who We Are</h2>
+            </div>
+            <div class="who-we-are-content mt-5 d-flex">
+              <div class="row d-flex g-5 justify-content-center">
+                <div class="col-md-4">
+                   <div class="who-we-are-img">
+                <img src="./assets/img/public/whoweare.webp" class="img-fluid rounded-4" alt="...">
+              </div>
+                </div>
+              <div class="col-md-7 text-light d-flex flex-column lead subFont">
+                <p>At Muscle Force we believe Crossfitters come in all shapes and sizes, we are all on a journey towards our own personal best health and fitness levels. A journey that makes us better as athletes, friends and people.
+                  </p>
+                <p>
+                 Our facility is unlike any other gym you’ve been to before. We pride ourselves not only in providing world class CrossFit training, but we also believe in creating a motivating and dynamic environment. We are the community dedicated to your human evolution, one workout at a time.
+                </p>
+              </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+      <section class="gallery py-5" id="Gallery">
+        <div class="gallery-content">
+        <div class="gallery-wrapper">
+          <h2 class="gallery-heading mainFont mb-5">Gallery</h2>
+          <h2 class="behind-title gallery-title mainFont text-center">Gallery</h2>
+        </div>
+        <div class="container-fluid">
+         <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner ">
+           <div class="carousel-item active d-flex justify-content-center" data-bs-interval="3000"> 
+            <img src="./assets/img/public/forgallery0.webp" class="rounded-4 w-50"  alt="...">
+    </div>
+         <div class="carousel-item d-flex justify-content-center" data-bs-interval="3000">
+            <img src="./assets/img/public/forgallery.webp" class="rounded-4 w-50" alt="...">
+    </div>
+          <div class="carousel-item d-flex justify-content-center" data-bs-interval="3000">
+           <img src="./assets/img/public/forgallery1.webp" class="rounded-4 w-50" alt="...">
+    </div>
+          <div class="carousel-item d-flex justify-content-center" data-bs-interval="3000">
+           <img src="./assets/img/public/forgallery2.webp" class="rounded-4 w-50" alt="...">
+    </div>
+          <div class="carousel-item d-flex justify-content-center" data-bs-interval="3000">
+           <img src="./assets/img/public/forgallery3.webp" class="rounded-4 w-50" alt="...">
+    </div>
+          <div class="carousel-item d-flex justify-content-center" data-bs-interval="3000">
+           <img src="./assets/img/public/forgallery4.webp" class="rounded-4 w-50" alt="...">
+    </div>
+             <div class="carousel-item d-flex justify-content-center" data-bs-interval="3000">
+           <img src="./assets/img/public/forgallery5.webp" class="rounded-4 w-50" alt="...">
+    </div>
+          <div class="carousel-item d-flex justify-content-center" data-bs-interval="3000">
+           <img src="./assets/img/public/forgallery6.webp" class="rounded-4 w-50" alt="...">
+    </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        </div>
+      </div>
+      </section>
+
+      <section class="Classes py-5" id="Classes">
+        <h2 class="classes-heading mainColor mainFont text-center mb-5">Classes</h2>
+        <div class="container-fluid">
+          <div class="row g-3">
+            <div class="col-sm-6 col-md-3 d-flex justify-content-center flex-wrap">
+              <div class="card " style="width: 18rem;">
+              <img src="./assets/img/public/cardio.webp" class="card-img-top" alt="...">
+               <div class="card-body text-light subFont">
+               <h5 class="card-title">Cardio</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="./Classes.html" target="_blank"  class="btn costume-btn w-100 card-link subColor1">See Details</a>
+               </div>
+          </div>
+            </div>
+            <div class="col-sm-6 col-md-3 d-flex justify-content-center flex-wrap">
+              <div class="card" style="width: 18rem;">
+              <img src="./assets/img/public/forgallery3.webp" class="card-img-top" alt="...">
+               <div class="card-body text-light subFont">
+               <h5 class="card-title">Weight Liftting</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="./Classes.html" target="_blank"  class="btn costume-btn w-100 card-link subColor1">See Details</a>
+               </div>
+              
+          </div>
+            </div>
+            <div class="col-sm-6 col-md-3 d-flex justify-content-center flex-wrap">
+              <div class="card" style="width: 18rem;">
+              <img src="./assets/img/public/pilats2.webp" class="card-img-top " alt="...">
+               <div class="card-body text-light subFont">
+               <h5 class="card-title">Pilats</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="./Classes.html" target="_blank"  class="btn costume-btn w-100 card-link subColor1">See Details</a>
+               </div>
+      
+          </div>
+            </div>
+            <div class="col-sm-6 col-md-3 d-flex justify-content-center flex-wrap">
+              <div class="card" style="width: 18rem;">
+              <img src="./assets/img/public/forgallery8.webp" class="card-img-top" alt="...">
+               <div class="card-body text-light subFont">
+               <h5 class="card-title">HIIT</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="./Classes.html" target="_blank"  class="btn costume-btn w-100 card-link subColor1">See Details</a>
+               </div>
+          </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+     <section class="programs py-5 text-center" id="programs">
+      <h2 class="programs-heading mainColor mainFont text-center mb-5">Programs</h2>
+      <div class="container-fluid">
+       <div class="row g-5">
+        <div class="col-sm-6 col-md-4 d-flex justify-content-center flex-wrap">
+          <div class="card text-center programA" style="width: 18rem;">
+            <div class="programs-img d-flex justify-content-center mt-2">
+              <img src="./assets/img/programs/programA.webp"  class="card-img-top  w-75" alt="...">
+            </div>
+           <div class="card-body ">
+           <h3 class="mainFont">Program A</h3>
+                <a href="./Programs.html" target="_blank"  class="card-link btn costume-btn w-100 ">See Details</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-6 col-md-4 d-flex justify-content-center flex-wrap">
+          <div class="card bg" style="width: 18rem;">
+           <div class="programs-img d-flex justify-content-center mt-2">
+              <img src="./assets/img/programs/programB.webp"  class="card-img-top w-75" alt="...">
+            </div>
+           <div class="card-body">
+           <h3 class="mainFont">Program B</h3>
+                <a href="./Programs.html" target="_blank"  class="card-link btn costume-btn w-100 ">See Details</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-6 col-md-4 d-flex justify-content-center flex-wrap">
+          <div class="card" style="width: 18rem;">
+           <div class="programs-img d-flex justify-content-center mt-2">
+              <img src="./assets/img/programs/programC.webp"  class="card-img-top w-75" alt="...">
+            </div>
+           <div class="card-body">
+           <h3 class="mainFont">Program C</h2>
+                <a href="./Programs.html" target="_blank"  class="card-link btn costume-btn w-100 ">See Details</a>
+          </div>
+        </div>
+        </div>
+       </div>
+      </div>
+      
+     </section>
+
+     <section class="Membership py-5" id="Membership">
+      <h2 class="text-center mainFont mainColor mb-5">Memberships</h2>
+      <div class="container-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide">
+       <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"  aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"  aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"  aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"  aria-label="Slide 5"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active pb-5 ">
+      <div class="membership-item-inner d-flex justify-content-center">
+        <div class="card  mb-3" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title text-center subFont mainColor fs-4 fw-bold">Daily Class</h5>
+    <div class="membership-icon mt-3 text-center">
+        <img src="./assets/img/Icons/Membership/daily-calendar (1).svg" width="75" height="70" alt="">
+      </div>
+      <div class="membership-description d-flex flex-column align-items-center gap-3 ">
+        <span class="text-light text-center fs-5 mt-3 mainFont">10₪</span>
+        <ul class="text-light  mt-3">
+          <li>HIIT Class</li>
+          <li>Resistance Exercises with or without weight</li>
+        </ul>
+    <button type="button" class="btn costume-btn w-100">
+                <a href="./SignUp.html" target="_blank"  class="card-link subColor1">Book Now</a>
+        </button>
+  </div>
+</div>
+    </div>
+      </div>
+  </div>
+   <div class="carousel-item  pb-5 ">
+      <div class="membership-item-inner d-flex justify-content-center">
+        <div class="card  mb-3" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title text-center subFont mainColor fs-4 fw-bold">3 Days\Week</h5>
+    <div class="membership-icon mt-3 text-center">
+        <img src="./assets/img/Icons/Membership/calendar-week.svg" width="75" height="70" alt="">
+      </div>
+      <div class="membership-description d-flex flex-column align-items-center gap-3">
+        <span class="text-light text-center fs-5 mt-3 mainFont">120₪</span>
+        <ul class="text-light  mt-3">
+          <li>3 days \ Week in Month</li>
+          <li>Resistance Exercises and Weight Liftting</li>
+          <li>You can Join the HIIT Class</li>
+        </ul>
+    <button type="button" class="btn costume-btn w-100">
+                <a href="./SignUp.html" target="_blank"  class="card-link subColor1">Book Now</a>
+        </button>
+  </div>
+</div>
+    </div>
+      </div>
+  </div>
+   <div class="carousel-item  pb-5 ">
+      <div class="membership-item-inner d-flex justify-content-center">
+        <div class="card  mb-3" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title text-center subFont mainColor fs-4 fw-bold">1 Month - Daily</h5>
+    <div class="membership-icon mt-3 text-center">
+        <img src="./assets/img/Icons/Membership/calendar-day.svg" width="75" height="70" alt="">
+      </div>
+      <div class="membership-description d-flex flex-column align-items-center gap-3">
+        <span class="text-light text-center fs-5 mt-3 mainFont">150₪</span>
+        <ul class="text-light  mt-3">
+          <li>Daily Classes</li>
+          <li>Resistance Exercises and Weight Liftting</li>
+          <li>You can Join the HIIT Class</li>
+        </ul>
+    <button type="button" class="btn costume-btn w-100">
+                <a href="./SignUp.html" target="_blank"  class="card-link subColor1">Book Now</a>
+        </button>
+  </div>
+</div>
+    </div>
+      </div>
+  </div>
+   <div class="carousel-item  pb-5 ">
+      <div class="membership-item-inner d-flex justify-content-center">
+        <div class="card  mb-3" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title text-center subFont mainColor fs-4 fw-bold">3 Months</h5>
+    <div class="membership-icon mt-3 text-center">
+        <img src="./assets/img/Icons/Membership/calendar.svg" width="75" height="70" alt="">
+      </div>
+      <div class="membership-description d-flex flex-column align-items-center gap-3">
+        <span class="text-light text-center fs-5 mt-3 mainFont">400₪</span>
+        <ul class="text-light  mt-3">
+          <li>Ultimate Class</li>
+          <li>Resistance Exercises and Weight Liftting</li>
+          <li>You can Join the HIIT Class</li>
+        </ul>
+    <button type="button" class="btn costume-btn w-100">
+                <a href="./SignUp.html" target="_blank"  class="card-link subColor1">Book Now</a>
+        </button>
+  </div>
+</div>
+    </div>
+      </div>
+  </div>
+   <div class="carousel-item  pb-5">
+      <div class="membership-item-inner d-flex justify-content-center">
+        <div class="card mb-3" style="width: 18rem;">
+  <div class="card-body offers-card-body">
+    <h5 class="card-title offes-title text-center subFont subColor fs-4 fw-bold">Offers</h5>
+    <div class="membership-icon offers-icon text-center">
+        <img src="./assets/img/Icons/Membership/silver.svg" width="90" height="90" alt="">
+      </div>
+      <div class="membership-description offers-description d-flex flex-column align-items-center gap-3">
+        <p class="text-light mt-4 font-monospace">Intrested in Our Gym? </p>
+        <p class="text-light text-center font-monospace">Take a Moment to See Our New Offers</p>
+          <a href="./Offers.html" target="_blank"  class="card-link btn offers-btn w-100 mainColor">View Offers</a>
+  </div>
+</div>
+    </div>
+      </div>
+  </div>
+  <button class="carousel-control-prev arrow-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next arrow-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+      </div>
+     </section>
+    </main>
+
+    <footer class="footer mainFont">
+      <div class="container">
+        <div class="row d-flex flex-wrap">
+          <div class="col-md-4 d-flex">
+            <div class="left-side d-flex flex-column flex-wrap flex-grow-1">
+          <h2 class="py-2 ">Contact</h2>
+          <div class="whatsapp d-flex">
+            <img src="./assets/img/Icons/Footer/whatsapp.svg" width="30" height="30" alt="WhatsApp">
+          <span class="mt-1 ms-1"> 0599 107 194 </span>
+          </div>
+          <div class="facebook d-flex mt-2">
+            <img src="./assets/img/Icons/Footer/facebook.svg" width="30" height="30" alt="Facebook">
+          <a href="https://www.facebook.com/profile.php?id=100086404292432" class="mt-1 ms-1 text-black" target="_blank">Muscle Force</a>
+          </div>
+          <div class="address d-flex mt-2">
+            <img src="./assets/img/Icons/Footer/pin.svg" width="30" height="30"  alt="Locaation">
+            <address class="pt-1">Nablus- Beit Foreek- Osama Abu Hait Building- Besides Friendship Medicalcenter</address>
+          </div>
+          
+        </div>
+          </div>
+          
+          <div class="col-md-4 offset-md-4 d-flex">
+        <div class="right-side d-flex flex-column flex-wrap flex-grow-1">
+            <h2 class="py-2">Subscribe Now</h2>
+            <form class="d-flex">
+           <div class="mb-3">
+            <div class="form-floating ">
+           <input type="email" class="form-control bg-black" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput" class="text-light">Email address</label>
+            </div>
+         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+         <button type="submit" class="btn bg-black">Submit</button>
+         </form>
+        </div>
+      </div>
+        </div>
+        
+      </div>
+    </footer>
+
+    
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+
+  
+</html>
+
+
