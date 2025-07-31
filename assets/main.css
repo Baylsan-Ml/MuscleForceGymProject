@@ -1,0 +1,1335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn{
+    color: var(--mainColor);
+}
+:root{
+    --mainColor: #efd500;
+    --mainFont: "Patrick Hand", cursive;
+    --subColor: #29143a;
+    --subColor1: #3d3e46;
+    --subColor2: #5c5b4d;
+    --subFont: "Courgette", cursive;
+}
+input:focus {
+        outline:var(--mainColor) !important;
+    }
+body{
+    background: linear-gradient(150deg,rgba(177, 171, 178, 1) 0%, rgba(56, 56, 56, 1) 50%, rgba(177, 171, 178, 1) 100%); 
+    overflow-x: hidden;
+}
+.mainColor{
+    color: var(--mainColor);
+}
+.subColor{
+    color: var(--subColor);
+}
+.subColor1{
+    color: var(--subColor1);
+}
+.subColor2{
+    color: var(--subColor2);
+}
+.mainFont{
+    font-family: var(--mainFont);
+}
+.subFont{
+    font-family: var(--subFont);
+}
+.costume-btn{
+    background-color: var(--mainColor);
+    padding: 5px ;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+}
+/* startup-start */ 
+ .startup-bg{ 
+     background-image: url(./img/public/logo.webp); 
+     width:auto;
+     height: 100vh;
+     background-position: -50px -90px;
+ } 
+.startup{
+    height: 100vh;
+}
+.startup .startup-content{
+    width: fit-content;
+    position: absolute;
+    top:70px;
+    left:50px;
+    border-radius: 4px;
+    color: #fff;
+    position: absolute;
+    padding: 9px 7px;
+}
+.startup a{
+    color: var(--subColor1);
+}
+.startup button{
+    background-color: var(--mainColor);
+}
+.startup button:hover{
+    background-color: var(--subColor1);
+    transform: scale(1.1);
+}
+.startup button:hover a{
+    color: var(--mainColor);
+   
+}
+/* starup end */
+/* Login Page */
+.register-background{
+    background-image: url(./img/public/logo.webp);
+    height: 100vh;
+    background-size: cover;
+    background-position: 0px -100px;
+    filter: blur(11px);
+}
+.register-card{
+    background: linear-gradient(90deg,rgba(115, 115, 70, 1) 0%, rgba(163, 144, 0, 1) 50%, rgba(217, 191, 0, 1) 100%);
+    position: absolute;
+    top: 16%;
+    left: 34%;
+    z-index: 2; 
+    padding: 50px;
+    box-shadow:  0px 0px 2px 2px var(--mainColor);
+}
+@media screen and (max-width:1200px){
+    .register-card{
+    position: absolute;
+    top: 5%;
+    left: 33%;
+    padding: 20px;
+    }
+}
+@media screen and (max-width:1050px){
+    .register-card{
+    position: absolute;
+    top: 5%;
+    left: 29%;
+    padding: 20px;
+    }
+}
+@media screen and (max-width:900px){
+    .register-card{
+    position: absolute;
+    top: 0%;
+    left: 21%;
+    padding: 20px;
+    }
+}
+@media screen and (max-width:646px){
+    .register-card{
+    position: absolute;
+     top: 0%;
+    left: 0%;
+    padding: 20px;
+    width: 100%;
+    }
+}
+
+.sign-form ::placeholder{
+    color: #fff;
+}
+/* Login PAge End */
+/* Navbar Section Start */
+.navbar{
+    /* background: linear-gradient(90deg,rgba(240, 240, 153, 1) 0%, rgba(247, 224, 47, 1) 50%, rgba(239, 213, 0, 1) 100%); */
+    /* background: linear-gradient(150deg,rgba(242, 153, 0, 1) 0%, rgba(255, 194, 89, 1) 50%, rgba(239, 213, 0, 1) 100%); */
+    /* background: linear-gradient(150deg,rgba(135, 1, 108, 1) 0%, rgba(255, 194, 89, 1) 65%, rgba(239, 213, 0, 1) 100%);     */
+   background: linear-gradient(150deg,rgba(66, 56, 7, 1) 0%, rgba(255, 230, 41, 1) 50%, rgba(255, 242, 140, 1) 100%);
+
+
+    box-shadow: 0 5px 10px var(--mainColor);
+}
+/* .navbar .nav-link:hover{
+     transform: rotate3d(1, 2, 3, 10deg);
+} */
+.nav-item{
+    font-family: var(--mainFont);
+    font-weight: 700;
+}
+.search-btn{
+    font-family: var(--mainFont);
+}
+.dropdown-menu{
+    min-width: 0;
+}
+/* Navbar Section End */
+
+/* Admin Page Start */
+
+.Admin-Body{
+    position: relative;
+}
+
+.Admin-body-bg{
+    background-image: url(./img/Admin-Page/muscle-removebg-preview.webp);
+     position: absolute;
+     top:620px;
+     bottom: 0;
+    width: 100%;
+    height: 77%; 
+    overflow: hidden;
+    background-position: center;
+    z-index: -1;
+     filter: blur(3px);
+}
+.Members h2{
+     font-size: 60px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px #fff;
+    filter: drop-shadow(2px 2px var(--subColor));
+}
+.Members tr:hover{
+    transform: scale(1.001);
+    
+}
+.Members .add-icon-mother{
+    width: 3%;
+}
+.Members .add-icon{
+    width: 50%;
+}
+.Members .table{
+    cursor: pointer;
+}
+.Members .table th {
+    background-color: rgba(237, 219, 17, 0.3);  
+    backdrop-filter: blur(5px);
+    color: #fff;
+    border-color: var(--mainColor);
+    box-shadow: -1px 1px 2px var(--mainColor) ;
+}
+.Members .table td {
+    background-color: rgba(237, 219, 17, 0.3);  
+    backdrop-filter: blur(5px);
+    color: #fff;
+    border-color: var(--mainColor);
+    box-shadow: -1px 1px 2px var(--mainColor) ;
+}
+.Members footer{
+    position: relative;
+}
+
+.Admin-Body .add-new-btn{
+    background-color: var(--mainColor);
+    color: var(--subColor1);
+    padding:9px ;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    box-shadow: -2px 2px 2px #f6eca3 ;
+}
+.Admin-Body  .add-new-btn{
+    background-color: var(--mainColor);
+    color: var(--subColor1);
+    padding:9px ;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    box-shadow: -2px 2px 2px #f6eca3 ;
+}
+.Admin-Body .modal{
+    backdrop-filter: blur(7px);
+}
+
+.Admin-Body  .modal-content{
+    background: linear-gradient(90deg,rgba(115, 115, 70, 1) 0%, rgba(163, 144, 0, 1) 50%, rgba(217, 191, 0, 1) 100%);
+
+}
+.Admin-Body  .save-btn{
+    background-color: #000000;
+    color: var(--mainColor);
+    padding: 5px ;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+}
+.Admin-Body  .save-btn:hover{
+    transform: scale(1.1);
+}
+.Admin-Body  .close-btn{
+    background-color: #5c5b4d;
+    padding: 5px ;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+}
+.Admin-Body  input{
+    background-color: #000000;
+    color: #f6eca3; 
+}
+.Admin-Body  label{
+    font-weight: 700;
+}
+.Admin-Body  .modal-title{
+    text-shadow: -1px 1px 1px var(--mainColor); 
+    font-weight: 700;
+}
+.Admin-Body  .input-group-text{
+    color: #000000;
+    background-color: #fff; 
+}
+.Admin-Body  .choose-file{
+    color: #000000;
+    background-color: #f6eca3; 
+}
+.Admin-Body  .form-control{
+    background-color: #000000;
+    color: #f6eca3; 
+}
+.Admin-Body  select{
+    color: #f6eca3;
+}
+.Admin-Body  .close-btn:hover{
+    transform: scale(1.1);
+    color: var(--mainColor);
+}
+
+.Admin .add-new-membership{
+    max-width: 288px;
+    max-height: 404px;
+}
+.Admin-Body footer{
+    position: relative;
+    z-index: 1;
+}
+
+/* Admin Page End */
+
+/* Member Page Start */
+/* Header Section Start */
+.Member-body{
+    position: relative;
+}
+.Member-body-bg{
+    background-image: url(./img/Programs-Page/ProgramsPageBG.webp);
+     position: absolute;
+     top:620px;
+     bottom: 900px;
+    width: 100%;
+    height: 85%; 
+    overflow: hidden;
+    z-index: -1;
+     filter: blur(1.5px);
+     opacity: 0.5;
+}
+.Header{
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+}
+.header{
+    background-image:url(./img/public/logo.webp);
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    position: absolute;
+    top: 50%;
+   left: 50%;
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: 100%;
+  transform: translate(-50%, -50%); 
+}
+.header h1{
+    font-family: var(--mainFont);
+    font-weight: 700;
+    font-size: 100px;
+    text-shadow: 2px 2px #efd500;
+}
+
+/* Header Section End */
+
+/* Quote Section Start */
+.quote-section{
+    position: relative;
+    z-index: 1;
+    animation-name: quote;
+    animation-duration: 4s;
+}
+
+.quote-text-1{
+    font-style: italic;
+    font-size: 70px;
+    text-shadow: 2px 2px var(--mainColor);
+    animation-name: transformLeft;
+    animation-duration: 4s;
+    filter: drop-shadow(2px 2px var(--subColor1));
+}
+@keyframes transformLeft{
+    from{
+        transform:translateX(-100%);
+    }
+    to{
+        transform:translateX(0%);
+    }
+}
+.quote-text-2{
+    font-style: italic;
+    font-size: 70px;
+    text-shadow: 2px 2px var(--mainColor);
+    animation-name: transformRight;
+    animation-duration: 4s;
+    filter: drop-shadow(2px 2px var(--subColor1));
+    
+}
+@keyframes transformRight{
+    from{
+        transform:translateX(100%);
+    }
+    to{
+        transform:translateX(0%);
+    }
+}
+/* Quote Section End */
+
+/* Who We Are Section Start */
+.WhoWeAre-section{
+    position: relative;
+    z-index: 2;
+}
+.WhoWeAre-section .row{
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 9px;
+}
+.WhoWeAre-section::before{
+   content: ""; 
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url(./img/public/WhoWeAreBG.svg);
+   z-index: -2;
+}
+.WhoWeAre-section-content{
+    border-radius: 9px;
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(10px); 
+}
+ .who-we-are-wrapper {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+} 
+.who-we-are-heading {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: var(--mainColor);
+    text-shadow: 2px 2px #fff;
+    filter: drop-shadow(1px 1px var(--subColor1));
+}
+ .behind-title{
+    position: absolute;
+    left: 0%;
+    top: -25%;
+    right: 0%;
+    bottom: 0%;
+    z-index: -1;
+    color: rgb(78 78 78 / 12%);
+    text-shadow: 1px 1px #3d3e4618;
+    font-size: 105px;
+    line-height: 70%;
+    text-align: center;
+    text-decoration: underline;
+    filter: drop-shadow(1px 1px var(--subColor1));
+} 
+.who-we-are-content p{
+    color: var(--subColor1);
+    filter: drop-shadow(1px 1px var(--subColor1));
+    
+}
+
+/* Who We Are Section End */
+
+/* Gallery Section Start */
+.gallery-wrapper {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+.gallery-heading {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: var(--mainColor);
+    text-shadow: 1px 1px #fff;
+    filter: drop-shadow(1px 1px var(--subColor1));
+}
+.behind-title{
+    position: absolute;
+    left: 0%;
+    top: -25%;
+    right: 0%;
+    bottom: 0%;
+    z-index: -1;
+    color: rgba(207, 207, 205, 0.121);
+    font-size: 105px;
+    line-height: 70%;
+    text-align: center;
+    text-decoration:underline;
+}
+/* Gallery Section End */
+
+/* Classes Section Start */
+.Classes h2{
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px #fff;
+    filter: drop-shadow(2px 2px var(--subColor1));
+}
+.Classes .card{
+    border: 1px solid var(--mainColor);
+    box-shadow: -2px 2px 3px var(--mainColor1);
+}
+.Classes .card-body{
+   background: linear-gradient(150deg,rgba(239, 213, 0, 1) 0%, rgba(56, 56, 56, 1) 50%, rgba(177, 171, 178, 1) 100%);
+}
+
+.Classes a:hover{
+    color: var(--mainColor);
+    background-color: var(--subColor1);
+}
+
+@media screen and (min-width: 760px) {
+    .Classes .card{
+        width: calc((100% - 32px) / 3)
+    }
+}
+@media screen and (max-width: 576px) {
+    .Classes .card{
+        width: 100%;
+    }
+}
+/* Classes Section End */
+/* Programs Section Start */
+.programs h2{
+     font-size: 60px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px #fff;
+    filter: drop-shadow(2px 2px var(--subColor1));
+}
+.programs .card{
+    box-shadow: -3px 3px 2px var(--subColor);
+}
+.Program{
+    padding-bottom: 5px;
+}
+.programs a{
+    background-color: var(--subColor);
+    color: #fff;
+}
+.programs a:hover{
+    color: var(--subColor);
+    background-color: var(--mainColor);
+}
+
+/* Programs Section End  */
+/* Membership Section Start */
+.Membership h2{
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px #fff;
+    filter: drop-shadow(2px 2px var(--subColor1));
+}
+.Membership .card-body{
+    background: linear-gradient(150deg,rgba(177, 171, 178, 1) 0%, rgba(56, 56, 56, 1) 50%, rgba(177, 171, 178, 1) 100%);
+    border-radius: 5px;
+    box-shadow: -2px 2px 3px var(--subColor1);
+}
+.Membership .offers-card-body{
+    background: linear-gradient(150deg,rgba(239, 213, 0, 1) 0%, rgba(130, 115, 0, 1) 50%, rgba(255, 235, 84, 1) 100%);
+    border-radius: 5px;
+    box-shadow: -2px 2px 3px var(--subColor1);
+}
+.Membership .card-title{
+    text-shadow: 1px 1px var(--subColor1);
+}
+.carousel-indicators [data-bs-target]{
+    background-color: var(--mainColor);
+    border-radius: 11px;
+
+}
+.Membership .offes-title{
+    text-shadow: 1px 1px var(--mainColor);
+    color: var(--subColor1);
+    padding-bottom: 30px;
+}
+.Membership li{
+    text-shadow: 1px 1px var(--subColor1);
+}
+.offers-description{
+    padding-top: 24px;
+}
+.offers-description p{
+    text-shadow: 1px 1px var(--subColor1);
+}
+.offers-btn{
+    background-color: var(--subColor1);
+    padding: 5px ;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.Membership a:hover{
+    color: var(--mainColor);
+}
+.Membership button:hover a{
+    color: var(--mainColor);
+}
+.Membership button:hover {
+    background-color: var(--subColor1);
+}
+.Membership .arrow-btn:hover{
+    background-color: transparent;
+}
+.Membership .offers-btn:hover{
+    color: var(--subColor1);
+    background-color: #fff;
+}
+/* Membership Section End */
+
+/* Footer Start */
+.footer{
+    background-color: var(--mainColor);
+}
+.footer address{
+    font-style: oblique;
+}
+.right-side a:hover{
+    color: #fff;
+}
+
+.left-side button:hover{
+    color: #fff;
+}
+.right-side button{
+    height:57px;
+}
+.right-side button:hover{
+    color: #fff;
+}
+
+/* Footer Start */
+
+/* Member Page End */
+
+
+/* Classes Page Start */
+.Classes-Header{
+    position: relative;
+    width: 100%;
+    height: 80vh; 
+    overflow: hidden;
+}
+.Classes-Header .header-bg{
+    background-image: url(./img/ClassesPage/ClassesPageBG.webp);
+    background-position: center;
+    filter: blur(2px);
+    position: absolute;
+    top: 50%;
+   left: 50%;
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: 100%;
+  transform: translate(-50%, -50%); 
+  z-index: -1;
+}
+.Classes-Header h1{
+    font-size: 90px;
+    max-width: 700px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px var(--subColor);
+    filter: drop-shadow(2px 2px var(--subColor1));
+}
+.Classes-Header p{
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px var(--subColor);
+    filter: drop-shadow(2px 2px var(--subColor1));
+}
+.header-content {
+  position: relative;
+  z-index: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white; 
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4); 
+}
+/* Cardio Section Start */
+.Cardio h2{
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px var(--subColor);
+    filter: drop-shadow(2px 2px var(--subColor1));
+}
+
+.list-group-item.active{
+    background-color: var(--subColor);
+    border-color: var(--subColor);
+}
+.Cardio h3{
+    text-shadow: 2px 2px var(--subColor1);
+}
+.Cardio h5{
+    font-weight: 350;
+}
+.Cardio-Benefits{
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(10px); 
+   
+}
+.Cardio .carousel-indicators button:hover{
+    background-color: var(--subColor);
+}
+.Cardio a:hover{
+    background-color: var(--subColor);
+    color: #fff;
+}
+.Cardio-imgs .carousel-caption{
+    text-shadow: 1px 1px var(--subColor1);
+    filter: drop-shadow(2px 2px var(--subColor1));
+}
+/* @media screen and (max-width:975px) {
+    .Cardio .col-md-3{
+        width: 45%;
+        gap:5px;
+    }
+} */
+/* Cardio Section End */
+/* Weight-Lifting Section Start */
+.Weight-Lifting h2{
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px var(--subColor);
+    filter: drop-shadow(2px 2px var(--subColor1));
+}
+.Weight-Lifting .list-item1{
+    max-width: 212.75px;
+}
+.list-group-item.active{
+    background-color: var(--subColor);
+    border-color: var(--subColor);
+}
+.Weight-Lifting h3{
+    text-shadow: 2px 2px var(--subColor1);
+}
+.Weight-Lifting h5{
+    font-weight: 350;
+}
+.Weight-Lifting-Benefits{
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(10px); 
+   
+}
+.Weight-Lifting .carousel-indicators button:hover{
+    background-color: var(--subColor);
+}
+.Weight-Lifting .Mental-Health-btn{
+    margin-top: 64px;
+}
+.Weight-Lifting a:hover{
+    background-color: var(--subColor);
+    color: #fff;
+}
+.Weight-Lifting-imgs .carousel-caption{
+    text-shadow: 1px 1px var(--subColor1);
+    filter: drop-shadow(2px 2px var(--subColor1));
+}
+/* @media screen and (max-width:975px) {
+    .Weight-Lifting .col-md-3{
+        width: 45%;
+        gap:5px;
+    }
+} */
+/* Weight-Lifting Section End */
+
+/* Pilats Section Start */
+.Pilates h2{
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px var(--subColor);
+    filter: drop-shadow(2px 2px var(--subColor1));
+}
+.Pilates h3{
+    text-shadow: 2px 2px var(--subColor1);
+}
+.Pilates h5{
+    font-weight: 350;
+}
+.Pilates-Benefits{
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(10px); 
+}
+.Mental-Health-Pilates{
+    max-width: 297.95px;
+}
+.Physical-Pilates-btn{
+    margin-top: 60px;
+}
+.Pilates .carousel-indicators button:hover{
+    background-color: var(--subColor);
+}
+
+.Pilates a:hover{
+    background-color: var(--subColor);
+    color: #fff;
+}
+.Pilates-imgs .carousel-caption{
+    text-shadow: 1px 1px var(--subColor1);
+    filter: drop-shadow(2px 2px var(--subColor1));
+}
+/* @media screen and (max-width:975px) {
+    .Pilates .col-md-3{
+        width: 45%;
+        gap:5px;
+    }
+} */
+/* Pilats Section End */
+
+/* HIIT Section Start */
+.HIIT h2{
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px var(--subColor);
+    filter: drop-shadow(2px 2px var(--subColor1));
+}
+.HIIT h3{
+    text-shadow: 2px 2px var(--subColor1);
+}
+.HIIT h5{
+    font-weight: 350;
+}
+.HIIT-Benefits{
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(10px); 
+    max-width: 360px;
+   
+}
+.HIIT .carousel-indicators button:hover{
+    background-color: var(--subColor);
+}
+
+.HIIT a:hover{
+    background-color: var(--subColor);
+    color: #fff;
+}
+.HIIT-imgs .carousel-caption{
+    text-shadow: 1px 1px var(--subColor1);
+    filter: drop-shadow(2px 2px var(--subColor1));
+}
+.Other-btn{
+    margin-top: 89px;
+}
+.HIIT-Physical-Benefits{
+    max-width: 275px;
+}
+/* @media screen and (max-width:975px) {
+    .HIIT .col-md-3{
+        width: 45%;
+        gap:5px;
+    }
+} */
+/* HIIT Section End */
+
+/* HIIT-Scedual Section Start */
+.HIIT-Sceduale{
+    position: relative;
+}
+.sceduale-title-icon{
+    width: 15%;
+}
+.HIIT-Sceduale h2{
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px var(--subColor);
+    filter: drop-shadow(2px 2px var(--subColor1));
+}
+.HIIT-Sceduale::before{
+   content: ""; 
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url(./img/ClassesPage/BG1.jpg);
+   filter: blur(5px);
+   z-index: -2;
+}
+.HIIT-Sceduale .card{
+     background-color:#3d3e4667;
+     border-color: var(--mainColor);
+    color: #fff; 
+    width: 50%;
+    cursor:crosshair;
+}
+.HIIT-Sceduale .card:hover{
+    /* background-color: transparent;
+    color: #fff; */
+    width: 50%;
+    transform: scale(1.1);
+}
+.HIIT-Sceduale .card-footer{
+    color: #fff;
+    border-color: var(--mainColor);
+}
+.HIIT-Sceduale .card-header{
+    border-color: var(--mainColor);
+}
+/* HIIT-Scedual Section End */
+
+/* footer start */
+.Classes-Page .footer{
+    position: absolute;
+}
+/* footer end */
+/* Classes Page End */
+
+/* Programs Page Start */
+.Program-body{
+    position: relative;
+}
+.Program-body-bg{
+    background-image: url(./img/Programs-Page/ProgramsPageBG.webp);
+     position: absolute;
+     top:620px;
+     bottom: 900px;
+    width: 100%;
+    height: 85%; 
+    overflow: hidden;
+    z-index: -1;
+     filter: blur(1.5px);
+     opacity: 0.5;
+}
+.Programs-Page-Header{
+    position: relative;
+    width: 100%;
+    height: 85vh; 
+    overflow: hidden;
+}
+.Programs-Page-Header .header-bg{
+    background-image: url(./img/Programs-Page/ProgramsPageHeader.webp);
+     background-position: center;
+    filter: blur(2px);
+    position: absolute;
+    top: 50%;
+   left: 50%;
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: 100%;
+  transform: translate(-50%, -50%); 
+  z-index: -1;
+}
+.Programs-Page-Header h1{
+    font-size: 90px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px var(--subColor);
+    filter: drop-shadow(2px 2px var(--mainColor));
+}
+.Program-title-icon{
+    width: 7%;
+}
+.Program-btn a{
+    width: 150px; 
+    cursor: pointer;
+}
+.Program-btn a:hover{
+    background-color: #fff; 
+    transform: scale(1.1);
+}
+/* Program A Section Start */
+.Program-A h2{
+     font-size: 60px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px #fff;
+    filter: drop-shadow(2px 2px var(--subColor));
+}
+.Program-content .card{
+    background-color: rgba(248, 238, 37, 0.1);
+    backdrop-filter: blur(15px);
+    color: #fff;
+    border-color: var(--mainColor);
+    cursor:crosshair;
+}
+.Program-content .card:hover{
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(15px);
+    transform: scale(1.1);
+}
+.Program-content .card-header{
+        border-color: var(--mainColor);
+}
+.Program-content .card-footer{
+        border-color: var(--mainColor);
+}
+/* .programs .col-md-4{
+    max-width: 50%;
+}
+.programs .col-md-6{
+    max-width: 50%;
+} */
+.Program-A .upper-part{
+    gap: 48px;
+}
+ @media screen and (max-width:835px) {
+    .upper-part{
+        gap: 28px;
+    }
+
+}
+/* Program A Section End */
+/* Program B Section Start */
+.Program-B h2{
+     font-size: 60px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px #fff;
+    filter: drop-shadow(2px 2px var(--subColor));
+}
+
+.Program-B .upper-part{
+    gap: 48px;
+}
+ @media screen and (max-width:835px) {
+    .upper-part{
+        gap: 28px;
+    }
+
+}
+/* Program B Section End */
+/* Program C Section Start */
+.Program-C h2{
+     font-size: 60px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px #fff;
+    filter: drop-shadow(2px 2px var(--subColor));
+}
+
+.Program-C .upper-part{
+    gap: 48px;
+}
+ @media screen and (max-width:835px) {
+    .upper-part{
+        gap: 28px;
+    }
+
+}
+/* Program C Section End */ 
+
+/* footer start */
+.Programs-Page .footer{
+    position: fixed;
+    bottom: 0;
+}
+/* Programs Page End */
+/* Offers Page Start */
+/* Offers Header Start */
+.Offers-body{
+    position: relative;
+}
+.Offers-body-bg{
+    background-image: url(./img/Programs-Page/ProgramsPageBG.webp);
+     position: absolute;
+     top:620px;
+     bottom: 900px;
+    width: 100%;
+    height: 85%; 
+    overflow: hidden;
+    z-index: -1;
+     filter: blur(1.5px);
+     opacity: 0.5;
+}
+.Offers-Header{
+    position: relative;
+    width: 100%;
+    height: 85vh; 
+    overflow: hidden;
+}
+.Offers-Header .Offers-bg{
+    background-image: url(./img/Offers-Page/OffersBG.webp);
+    background-position: center;
+    filter: blur(2px);
+    position: absolute;
+    top: 50%;
+   left: 50%;
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: 100%;
+  transform: translate(-50%, -50%); 
+  z-index: -1;
+}
+.Offers-Header h1{
+    font-size: 90px;
+    max-width: 700px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px var(--subColor);
+    filter: drop-shadow(2px 2px var(--mainColor));
+}
+.Offers-Header p{
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px var(--subColor);
+    filter: drop-shadow(2px 2px var(--subColor1));
+}
+.Offers-content {
+  position: relative;
+  z-index: 1; 
+  height: 100%;
+  color: white; 
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4); 
+}
+/* Offers Header End */
+/* Membership Section Start */
+.Membership h2{
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px #fff;
+    filter: drop-shadow(2px 2px var(--subColor1));
+}
+.Membership .card-body{
+    background: linear-gradient(150deg,rgba(177, 171, 178, 1) 0%, rgba(56, 56, 56, 1) 50%, rgba(177, 171, 178, 1) 100%);
+    border-radius: 5px;
+    box-shadow: -2px 2px 3px var(--subColor1);
+}
+.Membership .offers-card-body{
+    background: linear-gradient(150deg,rgba(239, 213, 0, 1) 0%, rgba(130, 115, 0, 1) 50%, rgba(255, 235, 84, 1) 100%);
+    border-radius: 5px;
+    box-shadow: -2px 2px 3px var(--subColor1);
+}
+.Membership .card-title{
+    text-shadow: 1px 1px var(--subColor1);
+}
+.carousel-indicators [data-bs-target]{
+    background-color: var(--mainColor);
+    border-radius: 11px;
+
+}
+.Membership .offes-title{
+    text-shadow: 1px 1px var(--mainColor);
+    color: var(--subColor1);
+    padding-bottom: 30px;
+}
+.Membership li{
+    text-shadow: 1px 1px var(--subColor1);
+}
+.offers-description{
+    padding-top: 24px;
+}
+.offers-description p{
+    text-shadow: 1px 1px var(--subColor1);
+}
+.offers-btn{
+    background-color: var(--subColor1);
+    padding: 5px ;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.Membership a:hover{
+    color: var(--mainColor);
+}
+.Membership button:hover a{
+    color: var(--mainColor);
+}
+.Membership button:hover {
+    background-color: var(--subColor1);
+}
+.Membership .arrow-btn:hover{
+    background-color: transparent;
+}
+.Membership .offers-btn:hover{
+    color: var(--subColor1);
+    background-color: #fff;
+}
+/* Membership Section End */
+/* Men Offers Section Start */
+.head-title{
+    font-size: 70px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px #fff;
+    filter: drop-shadow(2px 2px var(--subColor1));
+}
+.Men-Offers h2{
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px #fff;
+    filter: drop-shadow(2px 2px var(--subColor1));
+}
+
+.Men-Offers .card-bg{
+background-image: url(./img/Offers-Page/men.webp);
+    border-radius: 4px;
+    backdrop-filter: blur(15px);
+     background-position: center;
+    filter: blur(2px);
+    position: absolute;
+    top: 50%;
+   left: 50%;
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: 100%;
+  transform: translate(-50%, -50%); 
+  z-index: -1;
+}
+.Men-Offers .card{
+     background-color: rgba(255, 255, 255, 0.04); 
+    backdrop-filter: blur(15px);
+    color: #fff;
+    position: relative;
+    border-color: var(--mainColor);
+    box-shadow: -1px 1px 2px var(--mainColor) ;
+}
+.Men-Offers .card:hover{
+     background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(15px);
+     transform: scale(1.1); 
+}
+.Men-Offers .card-title{
+    letter-spacing: 2px;
+    text-shadow: 1px 1px var(--subColor1);
+    filter: drop-shadow(1px 1px var(--subColor1));
+}
+.Men-Offers .card-header{
+    letter-spacing: 2px;
+    text-shadow: 1px 1px var(--subColor1);
+    filter: drop-shadow(1px 1px var(--subColor1));
+    border-color: var(--mainColor);
+}
+.Men-Offers .card-footer{
+    color: #fff;
+    text-shadow: 1px 1px var(--subColor1);
+    filter: drop-shadow(1px 1px var(--subColor1));
+    border-color: var(--mainColor);
+    
+}
+.Friends-Offer-card{
+    max-width: 65%;
+}
+.Two-Months-card{
+    max-width: 70%;
+
+}
+.Personal-Trainer-Offer-card{
+    max-width: 70%;
+}
+.Men-Offers .new-price{
+    color: rgb(16, 210, 16);
+    text-shadow: 1px 1px var(--subColor1);
+    filter: drop-shadow(1px 1px var(--subColor1));
+}
+.Men-Offers .old-price{
+    color: rgb(200, 2, 2);
+    text-shadow: 1px 1px var(--subColor1);
+    filter: drop-shadow(1px 1px var(--subColor1));
+    text-decoration: line-through;
+    font-size:13px ;
+}
+.offers-page-btn:hover{
+    background-color: #fff;
+    color: var(--subColor1);
+}
+/* Men Offers Section End */
+
+/* Women Section Start */
+
+.Women-Offers h2{
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px #fff;
+    filter: drop-shadow(2px 2px var(--subColor1));
+}
+
+.Women-Offers .card-bg{
+background-image: url(./img/Offers-Page/women.webp);
+    border-radius: 4px;
+    backdrop-filter: blur(15px);
+     background-position: center;
+    filter: blur(2px);
+    position: absolute;
+    top: 50%;
+   left: 50%;
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: 100%;
+  transform: translate(-50%, -50%); 
+  z-index: -1;
+}
+.Women-Offers .card{
+     background-color: rgba(255, 255, 255, 0.04); 
+    backdrop-filter: blur(15px);
+    color: #fff;
+    position: relative;
+    border-color: var(--mainColor);
+    box-shadow: -1px 1px 2px var(--mainColor) ;
+}
+.Women-Offers .card:hover{
+     background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(15px);
+     transform: scale(1.1); 
+}
+.Women-Offers .card-title{
+    letter-spacing: 2px;
+    text-shadow: 1px 1px var(--subColor1);
+    filter: drop-shadow(1px 1px var(--subColor1));
+}
+.Women-Offers .card-header{
+    letter-spacing: 2px;
+    text-shadow: 1px 1px var(--subColor1);
+    filter: drop-shadow(1px 1px var(--subColor1));
+    border-color: var(--mainColor);
+}
+.Women-Offers .card-footer{
+    /* color: #fff; */
+    text-shadow: 1px 1px var(--subColor1);
+    filter: drop-shadow(1px 1px var(--subColor1));
+    border-color: var(--mainColor);
+    
+}
+.One-Month-Offer-card{
+    max-width: 70%;
+}
+.Women-Offers .price{
+    color: var(--mainColor);
+    text-shadow: 1px 1px var(--subColor1);
+    filter: drop-shadow(1px 1px var(--subColor1));
+}
+
+.offers-page-btn:hover{
+    background-color: #fff;
+    color: var(--subColor1);
+}
+
+.One-Month-btn{
+    /* margin-top: 40px; */
+}
+/* Women Section End */
+/* Offers Page End */
