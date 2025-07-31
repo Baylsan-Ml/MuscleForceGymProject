@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+    <link rel="icon" href="./assets/img/public/logo-nobg.webp" />
+    <!-- CSS Bootstrap -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- costume CSS -->
+    <link rel="stylesheet" href="./assets/main.css"/>
+  </head>
+
+  <body>
+   
+   <nav class="navbar navbar-expand-lg position-sticky sticky-top top-0 px-3">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/img/public/logo-nobg.webp" width="25%" alt="...">
+      </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <svg xmlns="http://www.w3.org/2000/svg" height="20" width="25" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#000000" d="M96 64c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 160 0 64 0 160c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-64-32 0c-17.7 0-32-14.3-32-32l0-64c-17.7 0-32-14.3-32-32s14.3-32 32-32l0-64c0-17.7 14.3-32 32-32l32 0 0-64zm448 0l0 64 32 0c17.7 0 32 14.3 32 32l0 64c17.7 0 32 14.3 32 32s-14.3 32-32 32l0 64c0 17.7-14.3 32-32 32l-32 0 0 64c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-160 0-64 0-160c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32zM416 224l0 64-192 0 0-64 192 0z"/></svg>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./Member.html">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="./Member.html">Who We Are</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Member.html"  rel="noopener noreferrer">Gallery</a>
+        </li>
+        <li class="nav-item dropdown" data-bs-theme="dark">
+          <a class="nav-link dropdown-toggle" href="#Classes" rel="noopener noreferrer" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Classes
+          </a>
+          <ul class="dropdown-menu bg-black">
+            <li><a class="dropdown-item " href="#Cardio" rel="noopener noreferrer"  >Cardio</a></li>
+            <li><a class="dropdown-item" href="#Weight-Lifting" rel="noopener noreferrer" >Weight Lifting</a></li>
+            <li><a class="dropdown-item" href="#" rel="noopener noreferrer" ></a></li>
+            <li><a class="dropdown-item" href="#Pilates" rel="noopener noreferrer" >Pilates</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#HIIT" rel="noopener noreferrer" >HIIT</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="./Programs.html"  rel="noopener noreferrer">Programs</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" rel="noopener noreferrer" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Membership
+          </a>
+          <ul class="dropdown-menu bg-black" data-bs-theme="dark">
+            <li><a class="dropdown-item" href="./Offers.html" rel="noopener noreferrer" target="_blank">Daily</a></li>
+            <li><a class="dropdown-item" href="./Offers.html" rel="noopener noreferrer" target="_blank">3 Days/Week</a></li>
+            <li><a class="dropdown-item" href="./Offers.html" rel="noopener noreferrer" target="_blank">One Month</a></li>
+            <li><a class="dropdown-item" href="./Offers.html" rel="noopener noreferrer" target="_blank">Three Months</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="./Offers.html" rel="noopener noreferrer" target="_blank">Offers</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+
+      <form class="d-flex" role="search" data-bs-theme="dark">
+        <input class="search-btn form-control me-2 bg-black"  data-bs-theme="dark" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-sm btn-outline-secondary bg-black " type="button"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#fafafa" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></button>
+      </form>
+
+      <ul class="navbar-nav mb-2 ms-5">
+      <li class="nav-item dropdown" data-bs-theme="dark">
+          <a class="nav-link dropdown-toggle" href="#" rel="noopener noreferrer" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sign
+          </a>
+          <ul class="dropdown-menu bg-black " data-bs-theme="dark">
+            <li><a class="dropdown-item" href="./SignUp.html" target="_blank" rel="noopener noreferrer" target="_blank">SignUp</a></li>
+            <li><a class="dropdown-item" href="./Login.html" target="_blank" rel="noopener noreferrer" >Login</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+  
+</nav>
+      <header class="Classes-Header">
+      <div class="header-bg"></div>
+      <div class="header-content">
+    <h1 class="mainFont">Time to Fitness</h1>
+    <p class="subFont">Welcom to Muscle Force Classes</p>
+  </div>
+</header>
+<main>
+        <section class="Cardio py-5 " id="Cardio">
+          <h2 class="text-center mainFont mainColor mb-2">Cardio</h2>
+          <div class="container-fluid py-5">
+            <div class="row d-flex justify-content-center px-5 g-3">
+              <div class="col-sm-6 col-md-3 d-flex justify-content-center">
+                <div class="Cardio-content d-flex gap-5">
+              <div class="card Cardio-Benefits">
+              <h3 class="card-header text-center list-group-item list-group-item-action active py-2 mainFont text-light fs-5">
+                  Cardiovascular Benefits
+              </h3>
+             <div class="card-body  d-flex flex-column gap-4">
+    <ul class="list mt-2 d-flex flex-column gap-3 subFont">
+      <li class="list-item">Strengthens the heart</li>
+      <li class="list-item">Improves blood flow</li>
+      <li class="list-item">Lowers blood pressure</li>
+      <li class="list-item">Manages cholesterol</li>
+      <li class="list-item">Reduces risk of heart disease</li>
+      <li class="list-item">Manages weight</li>
+    </ul>
+    <a href="./SignUp.html" class="btn costume-btn Cardio-Benefits-btn w-100 subColor1 mt-2 mainFont">Book Now</a>
+  </div>
+  <div class="card-footer fs-6 mainFont">
+    Cardio-Benefits
+  </div>
+</div>
+ </div>
+</div>
+              <div class=" col-md-5 d-flex justify-content-center">
+                <div class="Cardio-imgs d-flex align-items-center">
+                  <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active ">
+      <img src="./assets/img/public/cardio.webp" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="mainFont">Cardio Class</h5>
+        <p class="subFont">Treadmill, Cross-Trainer and Exercise Bikes</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/ClassesPage/Treadmill.gif" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      <h5 class="mainFont">Treadmill</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/ClassesPage/Freebie - HIIT exercise bikes 🚲.gif" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Exercise Bikes</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/ClassesPage/Online Personal Training - The New Normal!.gif" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Treadmill</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/ClassesPage/Jump Rope Girl.gif" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Jump Rope</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/ClassesPage/Cross.gif" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Elliptical-Cross</h5>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next arrow-btn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon arrow-btn" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3 d-flex justify-content-center">
+                <div class="Cardio-content d-flex gap-5">
+    <div class="card Cardio-Benefits">
+  <h3 class="card-header text-center list-group-item list-group-item-action active py-2 mainFont text-light fs-5">
+    Other Benefits
+  </h3>
+  <div class="card-body  d-flex flex-column gap-4">
+    <ul class="list mt-2 d-flex flex-column gap-3 subFont">
+      <li class="list-item">Reduces risk of type 2 diabetes</li>
+      <li class="list-item">Improves mental well-being</li>
+      <li class="list-item">Boosts energy levels</li>
+      <li class="list-item">Strengthens bones and muscles</li>
+      <li class="list-item">Improves cognitive function</li>
+    </ul>
+    <a href="./SignUp.html" class="btn costume-btn w-100 subColor1 mt-5 mainFont">Book Now</a>
+  </div>
+  <div class="card-footer fs-6 mainFont">
+    Cardio-Benefits
+  </div>
+</div>
+</div>
+                </div>
+              </div>         
+</div>
+        </section>
+
+         <section class="Weight-Lifting py-5 " id="Weight-Lifting">
+          <h2 class="text-center mainFont mainColor mb-2">Weight-Lifting</h2>
+          <div class="container-fluid py-5">
+            <div class="row d-flex justify-content-center px-5 p-3 g-3">
+              <div class="col-sm-6 col-md-3 d-flex justify-content-center">
+                <div class="Weight-Lifting-content d-flex gap-5">
+              <div class="card Weight-Lifting-Benefits">
+              <h3 class="card-header text-center list-group-item list-group-item-action active py-2 mainFont text-light fs-5">
+                  Physical Health Benefits
+              </h3>
+             <div class="card-body  d-flex flex-column gap-4">
+    <ul class="list mt-2 d-flex flex-column gap-3 subFont">
+      <li class="list-item list-item1">Increased Muscle Strength and Mass</li>
+      <li class="list-item">Improved Bone Density</li>
+      <li class="list-item">Enhanced Metabolism</li>
+      <li class="list-item">Better Heart Health</li>
+      <li class="list-item">Improved Body Composition</li>
+      <li class="list-item">Improved Balance and Posture</li>
+    </ul>
+    <a href="./SignUp.html" class="btn costume-btn w-100 subColor1  mainFont">Book Now</a>
+  </div>
+  <div class="card-footer fs-6 mainFont">
+    WeightLifting-Benefits
+  </div>
+</div>
+ </div>
+</div>
+              <div class=" col-md-5 d-flex justify-content-center">
+                <div class="Weight-Lifting-imgs d-flex align-items-center">
+                
+ <div id="carousel-WeightLifting" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carousel-WeightLifting" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carousel-WeightLifting" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carousel-WeightLifting" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carousel-WeightLifting" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carousel-WeightLifting" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carousel-WeightLifting" data-bs-slide-to="5" aria-label="Slide 6"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active ">
+      <img src="./assets/img/public/forgallery3.webp" class="d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="mainFont">Weight-Lifting Class</h5>
+        <p class="subFont">Bodybuilding, Strength training, Hypertrophy training, and Endurance training</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/ClassesPage/weightLifting.gif" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      <h5 class="mainFont">OverHead</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/ClassesPage/weightLifting1.gif" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Triceps workout</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/ClassesPage/Row Fat Boy, Row!.gif" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Leg Extention</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/ClassesPage/weightLifting2.gif" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Deadlift</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/ClassesPage/Barbell-Bent-Over-Row.gif" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Barbell-Bent-Over-Row</h5>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-WeightLifting" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next arrow-btn" type="button" data-bs-target="#carousel-WeightLifting" data-bs-slide="next">
+    <span class="carousel-control-next-icon arrow-btn" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3 d-flex justify-content-center">
+                <div class="Weight-Lifting-content d-flex gap-5">
+    <div class="card Weight-Lifting-Benefits">
+  <h3 class="card-header text-center list-group-item list-group-item-action active py-2 mainFont text-light fs-5 ">
+    Mental Health Benefits
+  </h3>
+  <div class="card-body  d-flex flex-column gap-4">
+    <ul class="list mt-2 d-flex flex-column gap-3 subFont w-100">
+      <li class="list-item">Boosted Mood</li>
+      <li class="list-item">Improved Cognitive Function</li>
+      <li class="list-item">Increased Self-Confidence</li>
+      <li class="list-item">Better Sleep</li>
+      <li class="list-item">Reduced Stress and Anxiety</li>
+    </ul>
+    <a href="./SignUp.html" class="btn Mental-Health-btn costume-btn w-100 subColor1  mainFont">Book Now</a>
+  </div>
+  <div class="card-footer fs-6 mainFont">
+    WeightLifting-Benefits
+  </div>
+</div>
+</div>
+                </div>
+              </div>         
+</div>
+        </section>
+
+        <section class="Pilates py-5 " id="Pilates">
+          <h2 class="text-center mainFont mainColor mb-2">Pilates</h2>
+          <div class="container-fluid py-5">
+            <div class="row d-flex justify-content-center px-5 g-3">
+              <div class="col-sm-6 col-md-3 d-flex justify-content-center">
+                <div class="Pilates-content d-flex gap-3">
+              <div class="card Pilates-Benefits">
+              <h3 class="card-header text-center list-group-item list-group-item-action active py-2 mainFont text-light fs-5">
+                  Physical Benefits
+              </h3>
+             <div class="card-body  d-flex flex-column gap-4">
+    <ul class="list mt-2 d-flex flex-column gap-3 subFont">
+      <li class="list-item ">Core Strength</li>
+      <li class="list-item ">Muscle Strength and Tone</li>
+      <li class="list-item ">Flexibility and Range of Motion</li>
+      <li class="list-item ">Posture Improvement</li>
+      <li class="list-item ">Pain Relief</li>
+      <li class="list-item ">Improved Breathing</li>
+    </ul>
+    <a href="./SignUp.html" class="btn costume-btn Physical-Pilates-btn w-100 subColor1 mainFont">Book Now</a>
+  </div>
+  <div class="card-footer fs-6 mainFont">
+    Pilates-Benefits
+  </div>
+</div>
+ </div>
+</div>
+              <div class=" col-md-5 d-flex justify-content-center">
+                <div class="Pilates-imgs d-flex align-items-center">
+                  <div id="carousel-Pilates" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carousel-Pilates" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carousel-Pilates" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carousel-Pilates" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carousel-Pilates" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carousel-Pilates" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carousel-Pilates" data-bs-slide-to="5" aria-label="Slide 6"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active ">
+      <img src="./assets/img/public/pilats2.webp" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="mainFont">Pilates Class</h5>
+        <p class="subFont">Plank, Shoulder Bridge, Leg lifts and much more..</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/ClassesPage/pilates1.gif" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      <h5 class="mainFont">Treadmill</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/ClassesPage/pilates2.gif" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Exercise Bikes</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/ClassesPage/pilates.gif" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Treadmill</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/ClassesPage/pilates3.gif" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Jump Rope</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/ClassesPage/pilates4.gif" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Elliptical-Cross</h5>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-Pilates" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next arrow-btn" type="button" data-bs-target="#carousel-Pilates" data-bs-slide="next">
+    <span class="carousel-control-next-icon arrow-btn" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3 d-flex justify-content-center">
+                <div class="Pilates d-flex gap-5">
+    <div class="card Pilates-Benefits">
+  <h3 class="card-header text-center list-group-item list-group-item-action active py-2 mainFont text-light fs-5">
+    Mental Benefits
+  </h3>
+  <div class="card-body Mental-Health-Pilates d-flex flex-column gap-4">
+    <ul class="list mt-2 d-flex flex-column gap-3 subFont">
+      <li class="list-item ">Stress and Anxiety Reduction</li>
+      <li class="list-item ">Improved Mood and Emotional Well-being</li>
+      <li class="list-item ">Enhanced Mind-Body Connection</li>
+      <li class="list-item ">Potential Cognitive Function Boost</li>
+      <li class="list-item ">Increased Focus and Concentration</li>
+    </ul>
+    <a href="./SignUp.html" class="btn costume-btn w-100 subColor1 mt-1 mainFont">Book Now</a>
+  </div>
+  <div class="card-footer fs-6 mainFont">
+    Pilates-Benefits
+  </div>
+</div>
+</div>
+</div>
+</div>         
+</div>
+        </section>
+
+        <section class="HIIT py-5 " id="HIIT">
+          <h2 class="text-center mainFont mainColor mb-2">HIIT</h2>
+          <div class="container-fluid py-5">
+            <div class="row d-flex justify-content-center px-5 g-3">
+              <div class="col-sm-6 col-md-3 d-flex justify-content-center">
+                <div class="HIIT-content d-flex gap-4">
+              <div class="card HIIT-Benefits">
+              <h3 class="card-header text-center list-group-item list-group-item-action active py-2 mainFont text-light fs-5">
+                  Cardiovascular Benefits
+              </h3>
+             <div class="card-body HIIT-Physical-Benefits d-flex flex-column gap-4">
+    <ul class="list mt-2 d-flex flex-column gap-3 subFont">
+      <li class="list-item">Improved Heart Function</li>
+      <li class="list-item">Lower Resting Heart Rate and Blood Pressure</li>
+      <li class="list-item">Increased Oxygen Uptake</li>
+      <li class="list-item">Reduced Risk of Heart Disease</li>
+      <li class="list-item">Elevated Metabolism</li>
+      <li class="list-item">Increased Calorie Burn</li>
+    </ul>
+    <a href="#HIIT-Scedule" class="btn costume-btn w-100 subColor1  mainFont">HIIT Scedule</a>
+  </div>
+  <div class="card-footer fs-6 mainFont">
+    HIIT-Benefits
+  </div>
+</div>
+ </div>
+</div>
+              <div class=" col-md-5 d-flex justify-content-center">
+                <div class="HIIT-imgs d-flex align-items-center">
+                  <div id="carousel-HIIT" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carousel-HIIT" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carousel-HIIT" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carousel-HIIT" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carousel-HIIT" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carousel-HIIT" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carousel-HIIT" data-bs-slide-to="5" aria-label="Slide 6"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active ">
+      <img src="./assets/img/ClassesPage/HIIT6.webp" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="mainFont">HIIT Class</h5>
+        <p class="subFont">Aerobics, Upper-Body, Lower-Body Step Legs Workout and More..</p>
+        <a href="#HIIT-Scedule" class="btn costume-btn w-100 subColor1  mainFont">HIIT Scedule</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/ClassesPage/HIIT.webp" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      <h5 class="mainFont">Step-Up</h5>
+       <a href="#HIIT-Scedule" class="btn costume-btn w-100 subColor1  mainFont">HIIT Scedule</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/ClassesPage/HIIT1.webp" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Aerobics</h5>
+        <a href="#HIIT-Scedule" class="btn costume-btn w-100 subColor1  mainFont">HIIT Scedule</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/ClassesPage/Jump-Rope-Sky-to-Floor-Reach.webp" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Aerobics</h5>
+        <a href="#HIIT-Scedule" class="btn costume-btn w-100 subColor1  mainFont">HIIT Scedule</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/ClassesPage/Lunge-Double-Hop.webp" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Lunge to Double Hop</h5>
+          <a href="#HIIT-Scedule" class="btn costume-btn w-100 subColor1  mainFont">HIIT Scedule</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/img/ClassesPage/Pop-Squat.webp" class="img-fluid d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Pop Squat</h5>
+        <a href="#HIIT-Scedule" class="btn costume-btn w-100 subColor1  mainFont">HIIT Scedule</a>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-HIIT" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next arrow-btn" type="button" data-bs-target="#carousel-HIIT" data-bs-slide="next">
+    <span class="carousel-control-next-icon arrow-btn" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3 d-flex justify-content-center">
+                <div class="HIIT-content d-flex gap-5">
+    <div class="card HIIT-Benefits">
+  <h3 class="card-header text-center list-group-item list-group-item-action active py-2 mainFont text-light fs-5">
+    Other Benefits
+  </h3>
+  <div class="card-body  d-flex flex-column gap-4">
+    <ul class="list mt-2 d-flex flex-column gap-3 subFont">
+      <li class="list-item">Muscle Growth</li>
+      <li class="list-item">Improved Bone Density</li>
+      <li class="list-item">Enhanced Insulin Sensitivity</li>
+      <li class="list-item">Increased Energy Levels</li>
+      <li class="list-item">Improved Mood</li>
+    </ul>
+    <a href="#HIIT-Scedule" class="btn Other-btn costume-btn w-100 subColor1 mainFont">HIIT Scedule</a>
+  </div>
+  <div class="card-footer fs-6 mainFont">
+    HIIT-Benefits
+  </div>
+</div>
+</div>
+</div>
+</div>         
+</div>
+
+        </section>
+
+        <section class="HIIT-Sceduale py-5" id="HIIT-Scedule">
+          <h2 class="text-center mb-5 mainColor mainFont">HIIT Scedule</h2>
+          <div class="container-fluid">
+            <div class="row d-flex g-4 px-5 mainFont">
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card text-center ">
+               <div class="card-header d-flex gap-2 justify-content-center mainFont">
+                      Saturday
+                  <img src="./assets/img/ClassesPage/fitness-time (1).webp" class="sceduale-title-icon" alt="..">
+               </div>
+               <div class="card-body">
+             <h5 class="card-title mainFont">Coach Lana</h5>
+             <p class="card-text">Full Body Workout.</p>
+              </div>
+              <div class="card-footer ">
+                 10:00-11:00 am
+              </div>
+           </div>
+           </div> 
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card text-center">
+               <div class="card-header d-flex gap-2 justify-content-center mainFont">
+                      Sunday
+                  <img src="./assets/img/ClassesPage/fitness-time (1).webp" class="sceduale-title-icon" alt="..">
+               </div>
+               <div class="card-body">
+             <h5 class="card-title mainFont">Coach Safaa</h5>
+             <p class="card-text">Upper Body Workout.</p>
+              </div>
+              <div class="card-footer ">
+                 09:00-10:00 am
+              </div>
+           </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card text-center">
+               <div class="card-header d-flex gap-2 justify-content-center mainFont">
+                      Monday
+                <img src="./assets/img/ClassesPage/fitness-time (1).webp" class="sceduale-title-icon" alt="..">
+               </div>
+               <div class="card-body">
+             <h5 class="card-title mainFont">Coach Hadeel</h5>
+             <p class="card-text">Step Legs Workout.</p>
+              </div>
+              <div class="card-footer ">
+                 03:30-04:00 pm
+              </div>
+           </div>
+              </div>
+
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card text-center">
+               <div class="card-header d-flex gap-2 justify-content-center mainFont">
+                      Tuseday
+                <img src="./assets/img/ClassesPage/fitness-time (1).webp" class="sceduale-title-icon" alt="..">
+               </div>
+               <div class="card-body">
+             <h5 class="card-title mainFont">Coach Lana</h5>
+             <p class="card-text">Fit Ball Workout.</p>
+              </div>
+              <div class="card-footer ">
+                 09:30-10:30 pm
+              </div>
+           </div>
+              </div>
+
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card text-center">
+               <div class="card-header d-flex gap-2 justify-content-center mainFont">
+                      Wednesday
+                  <img src="./assets/img/ClassesPage/fitness-time (1).webp" class="sceduale-title-icon" alt="..">
+               </div>
+               <div class="card-body">
+             <h5 class="card-title mainFont">Coach Lana</h5>
+             <p class="card-text">Aerobics Workout.</p>
+              </div>
+              <div class="card-footer ">
+                 03:30-04:00 am
+              </div>
+           </div>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card text-center">
+               <div class="card-header d-flex gap-2 justify-content-center mainFont">
+                      Thuresday
+                  <img src="./assets/img/ClassesPage/fitness-time (1).webp" class="sceduale-title-icon" alt="..">
+               </div>
+               <div class="card-body">
+             <h5 class="card-title mainFont">Coach Safaa</h5>
+             <p class="card-text mainFont">Lower Body Workout.</p>
+              </div>
+              <div class="card-footer  mainFont">
+                 09:00-10:00 am
+              </div>
+           </div>
+              </div>
+             </div>
+            </div>
+        </section>
+</main>
+
+
+<footer class="footer mainFont">
+      <div class="container">
+        <div class="row d-flex flex-wrap">
+          <div class="col-md-4 d-flex">
+            <div class="left-side d-flex flex-column flex-wrap flex-grow-1">
+          <h2 class="py-2">Contact</h2>
+          <div class="whatsapp d-flex">
+            <img src="./assets/img/Icons/Footer/whatsapp.svg" width="30" height="30" alt="WhatsApp">
+          <span class="mt-1 ms-1"> 0599 107 194 </span>
+          </div>
+          <div class="facebook d-flex mt-2">
+            <img src="./assets/img/Icons/Footer/facebook.svg" width="30" height="30" alt="Facebook">
+          <a href="https://www.facebook.com/profile.php?id=100086404292432" class="mt-1 ms-1 text-black" target="_blank">Muscle Force</a>
+          </div>
+          <div class="address d-flex mt-2">
+            <img src="./assets/img/Icons/Footer/pin.svg" width="30" height="30"  alt="Locaation">
+            <address class="pt-1">Nablus- Beit Foreek- Osama Abu Hait Building- Besides Friendship Medicalcenter</address>
+          </div>
+          
+        </div>
+          </div>
+          
+          <div class="col-md-4 offset-md-4 d-flex">
+        <div class="right-side d-flex flex-column flex-wrap flex-grow-1">
+            <h2 class="py-2">Subscribe Now</h2>
+            <form class="d-flex">
+           <div class="mb-3">
+            <div class="form-floating ">
+           <input type="email" class="form-control bg-black" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput" class="text-light">Email address</label>
+            </div>
+         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+         <button type="submit" class="btn bg-black">Submit</button>
+         </form>
+        </div>
+      </div>
+        </div>
+        
+      </div>
+    </footer>
+
+    
+ <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
