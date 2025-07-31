@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="./assets/img/public/logo-nobg.webp" />
+    <!-- CSS Bootstrap -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- costume CSS -->
+    <link rel="stylesheet" href="./assets/main.css">
+  </head>
+
+
+  <body class="Admin-Body mainFont">
+    <div class="Admin-body-bg overflow-x-hidden "></div>
+       <nav class="navbar navbar-expand-lg position-sticky sticky-top top-0 px-3">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/img/public/logo-nobg.webp" width="25%" alt="...">
+      </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <svg xmlns="http://www.w3.org/2000/svg" height="20" width="25" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#000000" d="M96 64c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 160 0 64 0 160c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-64-32 0c-17.7 0-32-14.3-32-32l0-64c-17.7 0-32-14.3-32-32s14.3-32 32-32l0-64c0-17.7 14.3-32 32-32l32 0 0-64zm448 0l0 64 32 0c17.7 0 32 14.3 32 32l0 64c17.7 0 32 14.3 32 32s-14.3 32-32 32l0 64c0 17.7-14.3 32-32 32l-32 0 0 64c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-160 0-64 0-160c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32zM416 224l0 64-192 0 0-64 192 0z"/></svg>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./Admin.html">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#Members">Members</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#Classes">Classes</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#programs">Programs</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#Membership">Membership</a>
+        </li>
+      </ul>
+
+      <form class="d-flex" role="search" data-bs-theme="dark">
+        <input class="search-btn form-control me-2 bg-black"  data-bs-theme="dark" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-sm btn-outline-secondary bg-black " type="button"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#fafafa" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></button>
+      </form>
+
+      <ul class="navbar-nav mb-2 ms-5">
+      <li class="nav-item dropdown" data-bs-theme="dark">
+          <a class="nav-link dropdown-toggle" href="#" rel="noopener noreferrer" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sign
+          </a>
+          <ul class="dropdown-menu bg-black " data-bs-theme="dark">
+            <li><a class="dropdown-item" href="./SignUp.html" target="_blank" rel="noopener noreferrer" target="_blank">SignUp</a></li>
+            <li><a class="dropdown-item" href="./Login.html" target="_blank" rel="noopener noreferrer" >Login</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+  
+</nav>
+    <header class="Header">
+          <div class="header text-center vh-100">
+            </div>
+    </header>
+
+    <main>
+      <section class="Members py-5 px-5 mainFont" id="Members">
+        <h2 class="text-center mb-5 mainColor">Members</h2>
+        <div class="container-fluid">
+          <div class="table-responsive">
+          <table class="table table-striped">
+       <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">E-mail</th>
+      <th scope="col">Stard Date</th>
+      <th scope="col">End Date</th>
+      <th scope="col">Subscription</th>
+      <th scope="col" class="add-icon-mother">
+        <!-- <button type="button" class="btn btn-outline-secondary">+</button> -->
+         <img src="./assets/img/Admin-Page/plus-removebg-preview.svg" class="add-icon" alt="+">
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Baylsan</td>
+      <td>Mletat</td>
+      <td>Baylsan.mletat@hotmail.com</td>
+      <td>05\Jul\2025</td>
+      <td>05\Aug\2025
+        <span class="badge rounded-pill text-bg-warning">!</span>
+      </td>
+      <td>3 Days\Week</td>
+      <td class="add-btn">.</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Bashar</td>
+      <td>Mletat</td>
+      <td>Bashar.mletat@hotmail.com</td>
+      <td>16\Jul\2025</td>
+      <td>16\Aug\2025</td>
+      <td>One-Month Daily</td>
+      <td class="add-btn">.</td>
+
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Hakeem</td>
+      <td>Mletat</td>
+      <td>Hakeem.mletat@hotmail.com</td>
+      <td>16\Jul\2025</td>
+      <td>16\Aug\2025</td>
+      <td>One-Month Daily</td>
+      <td class="add-btn">.</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Lana</td>
+      <td>Hanani</td>
+      <td>Lana.Hanani@hotmail.com</td>
+      <td>20\Jul\2025
+        <span class="badge rounded-pill text-bg-dark">New</span>
+      </td>
+      <td>20\Aug\2025</td>
+      <td>Three Months</td>
+      <td class="add-btn">.</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Sara</td>
+      <td>Mohammed</td>
+      <td>Sara.mohammed@hotmail.com</td>
+      <td>23\Jul\2025
+        <span class="badge rounded-pill text-bg-dark">New</span>
+      </td>
+      <td>23\Aug\2025</td>
+      <td>3 Days\Week</td>
+      <td class="add-btn">.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+        </div>
+      </section>
+
+      <section class="Classes py-5" id="Classes">
+        <h2 class="classes-heading mainColor mainFont text-center mb-5">Classes</h2>
+        <div class="add-new-class d-flex justify-content-center">
+          <button type="button" class="btn add-new-btn subColor1 mb-5 fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Add New Class</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">New Class</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Class Name</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Class Description:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+          <label for="message-text" class="col-form-label">Class Photo:</label>
+          <div class="input-group mb-3 ">
+         <input type="file" class="form-control" id="inputGroupFile02">
+        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+</div>
+        </form>
+      </div>
+      <div class="modal-footer d-flex">
+        <button type="button" class="btn close-btn" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn save-btn">Save Class</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="container-fluid">
+          <div class="row g-3">
+            <div class="col-sm-6 col-md-3 d-flex justify-content-center flex-wrap">
+              <div class="card " style="width: 18rem;">
+              <img src="./assets/img/public/cardio.webp" class="card-img-top" alt="...">
+               <div class="card-body text-light subFont">
+               <h5 class="card-title">Cardio</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="./Classes.html" target="_blank"  class="btn costume-btn w-100 card-link subColor1">See Details</a>
+               </div>
+          </div>
+            </div>
+            <div class="col-sm-6 col-md-3 d-flex justify-content-center flex-wrap">
+              <div class="card" style="width: 18rem;">
+              <img src="./assets/img/public/forgallery3.webp" class="card-img-top" alt="...">
+               <div class="card-body text-light subFont">
+               <h5 class="card-title">Weight Liftting</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="./Classes.html" target="_blank"  class="btn costume-btn w-100 card-link subColor1">See Details</a>
+               </div>
+              
+          </div>
+            </div>
+            <div class="col-sm-6 col-md-3 d-flex justify-content-center flex-wrap">
+              <div class="card" style="width: 18rem;">
+              <img src="./assets/img/public/pilats2.webp" class="card-img-top " alt="...">
+               <div class="card-body text-light subFont">
+               <h5 class="card-title">Pilats</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="./Classes.html" target="_blank"  class="btn costume-btn w-100 card-link subColor1">See Details</a>
+               </div>
+      
+          </div>
+            </div>
+            <div class="col-sm-6 col-md-3 d-flex justify-content-center flex-wrap">
+              <div class="card" style="width: 18rem;">
+              <img src="./assets/img/public/forgallery8.webp" class="card-img-top" alt="...">
+               <div class="card-body text-light subFont">
+               <h5 class="card-title">HIIT</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="./Classes.html" target="_blank"  class="btn costume-btn w-100 card-link subColor1">See Details</a>
+               </div>
+          </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+     <section class="programs py-5 text-center" id="programs">
+      <h2 class="programs-heading mainColor mainFont text-center mb-5">Programs</h2>
+      <div class="container-fluid">
+       <div class="row g-5">
+        <div class="add-new-program d-flex justify-content-center">
+          <button type="button" class="btn add-new-btn subColor1 fw-bold" data-bs-toggle="modal" data-bs-target="#programs-modal" data-bs-whatever="@mdo">Add New Program</button>
+<div class="modal fade" id="programs-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">New Program</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Program Name</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Program Description:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+          <label for="message-text" class="col-form-label">Program Photo:</label>
+          <div class="input-group mb-3 ">
+         <input type="file" class="form-control" id="inputGroupFile02">
+        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+</div>
+        </form>
+      </div>
+      <div class="modal-footer d-flex">
+        <button type="button" class="btn close-btn" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn save-btn">Save Program</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="col-sm-6 col-md-4 d-flex justify-content-center flex-wrap">
+          <div class="card text-center programA" style="width: 18rem;">
+            <div class="programs-img d-flex justify-content-center mt-2">
+              <img src="./assets/img/programs/programA.webp"  class="card-img-top  w-75" alt="...">
+            </div>
+           <div class="card-body ">
+           <h3 class="mainFont">Program A</h3>
+                <a href="./Programs.html" target="_blank"  class="card-link btn costume-btn w-100 ">See Details</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-6 col-md-4 d-flex justify-content-center flex-wrap">
+          <div class="card bg" style="width: 18rem;">
+           <div class="programs-img d-flex justify-content-center mt-2 ">
+              <img src="./assets/img/programs/programB.webp"  class="card-img-top w-75" alt="...">
+            </div>
+           <div class="card-body">
+           <h3 class="mainFont">Program B</h3>
+                <a href="./Programs.html" target="_blank"  class="card-link btn costume-btn w-100 ">See Details</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-6 col-md-4 d-flex justify-content-center flex-wrap">
+          <div class="card" style="width: 18rem;">
+           <div class="programs-img d-flex justify-content-center mt-2">
+              <img src="./assets/img/programs/programC.webp"  class="card-img-top w-75" alt="...">
+            </div>
+           <div class="card-body">
+           <h3 class="mainFont">Program C</h2>
+                <a href="./Programs.html" target="_blank"  class="card-link btn costume-btn w-100 ">See Details</a>
+          </div>
+        </div>
+        </div>
+       </div>
+      </div>
+      
+     </section>
+
+     <section class="Membership py-5" id="Membership">
+      <h2 class="text-center mainFont mainColor mb-5">Memberships</h2>
+      <div class="container-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide">
+       <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"  aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"  aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"  aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"  aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"  aria-label="Slide 6"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active pb-5 ">
+      <div class="membership-item-inner d-flex justify-content-center">
+        <div class="card  mb-3" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title text-center subFont mainColor fs-4 fw-bold">Daily Class</h5>
+    <div class="membership-icon mt-3 text-center">
+        <img src="./assets/img/Icons/Membership/daily-calendar (1).svg" width="75" height="70" alt="">
+      </div>
+      <div class="membership-description d-flex flex-column align-items-center gap-3 ">
+        <span class="text-light text-center fs-5 mt-3 mainFont">10₪</span>
+        <ul class="text-light  mt-3">
+          <li>HIIT Class</li>
+          <li>Resistance Exercises with or without weight</li>
+        </ul>
+    <button type="button" class="btn costume-btn w-100">
+                <a href="./SignUp.html" target="_blank"  class="card-link subColor1">Book Now</a>
+        </button>
+  </div>
+</div>
+    </div>
+      </div>
+  </div>
+   <div class="carousel-item  pb-5 ">
+      <div class="membership-item-inner d-flex justify-content-center">
+        <div class="card  mb-3" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title text-center subFont mainColor fs-4 fw-bold">3 Days\Week</h5>
+    <div class="membership-icon mt-3 text-center">
+        <img src="./assets/img/Icons/Membership/calendar-week.svg" width="75" height="70" alt="">
+      </div>
+      <div class="membership-description d-flex flex-column align-items-center gap-3">
+        <span class="text-light text-center fs-5 mt-3 mainFont">120₪</span>
+        <ul class="text-light  mt-3">
+          <li>3 days \ Week in Month</li>
+          <li>Resistance Exercises and Weight Liftting</li>
+          <li>You can Join the HIIT Class</li>
+        </ul>
+    <button type="button" class="btn costume-btn w-100">
+                <a href="./SignUp.html" target="_blank"  class="card-link subColor1">Book Now</a>
+        </button>
+  </div>
+</div>
+    </div>
+      </div>
+  </div>
+   <div class="carousel-item  pb-5 ">
+      <div class="membership-item-inner d-flex justify-content-center">
+        <div class="card  mb-3" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title text-center subFont mainColor fs-4 fw-bold">1 Month - Daily</h5>
+    <div class="membership-icon mt-3 text-center">
+        <img src="./assets/img/Icons/Membership/calendar-day.svg" width="75" height="70" alt="">
+      </div>
+      <div class="membership-description d-flex flex-column align-items-center gap-3">
+        <span class="text-light text-center fs-5 mt-3 mainFont">150₪</span>
+        <ul class="text-light  mt-3">
+          <li>Daily Classes</li>
+          <li>Resistance Exercises and Weight Liftting</li>
+          <li>You can Join the HIIT Class</li>
+        </ul>
+    <button type="button" class="btn costume-btn w-100">
+                <a href="./SignUp.html" target="_blank"  class="card-link subColor1">Book Now</a>
+        </button>
+  </div>
+</div>
+    </div>
+      </div>
+  </div>
+   <div class="carousel-item  pb-5 ">
+      <div class="membership-item-inner d-flex justify-content-center">
+        <div class="card  mb-3" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title text-center subFont mainColor fs-4 fw-bold">3 Months</h5>
+    <div class="membership-icon mt-3 text-center">
+        <img src="./assets/img/Icons/Membership/calendar.svg" width="75" height="70" alt="">
+      </div>
+      <div class="membership-description d-flex flex-column align-items-center gap-3">
+        <span class="text-light text-center fs-5 mt-3 mainFont">400₪</span>
+        <ul class="text-light  mt-3">
+          <li>Ultimate Class</li>
+          <li>Resistance Exercises and Weight Liftting</li>
+          <li>You can Join the HIIT Class</li>
+        </ul>
+    <button type="button" class="btn costume-btn w-100">
+                <a href="./SignUp.html" target="_blank"  class="card-link subColor1">Book Now</a>
+        </button>
+  </div>
+</div>
+    </div>
+      </div>
+  </div>
+   <div class="carousel-item  pb-5">
+      <div class="membership-item-inner d-flex justify-content-center">
+        <div class="card mb-3" style="width: 18rem;">
+  <div class="card-body offers-card-body">
+    <h5 class="card-title offes-title text-center subFont subColor fs-4 fw-bold">Offers</h5>
+    <div class="membership-icon offers-icon text-center">
+        <img src="./assets/img/Icons/Membership/silver.svg" width="90" height="90" alt="">
+      </div>
+      <div class="membership-description offers-description d-flex flex-column align-items-center ">
+        <p class="text-light font-monospace">Intrested in Our Gym? </p>
+        <p class="text-light text-center font-monospace">Take a Moment to See Our New Offers</p>
+        <div class="offers-btns w-100 d-flex flex-column gap-1">
+          <a href="./Offers.html" target="_blank"  class="card-link btn offers-btn w-100 mainColor">View Offers</a>
+          <div class="add-new-offer d-flex justify-content-center w-100">
+          <button type="button" class="btn offers-btn mainColor py-1 w-100" data-bs-toggle="modal" data-bs-target="#OfferModal" data-bs-whatever="@mdo">Add New Offer</button>
+<div class="modal fade" id="OfferModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">New Offer</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Offer Name</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Offer Description:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+          <select class="form-select bg-black" aria-label="Default select example">
+  <option selected>This Offer is For:</option>
+  <option value="1">Men</option>
+  <option value="2">Women</option>
+</select>
+         <div class="starting-date mb-3">
+        <label for="staringDate">Starting Date:</label>
+        <input id="staringDate" class="form-control" type="date">
+        </div>
+        <div class="due-date mb-3">
+        <label for="dueDate">Due Date:</label>
+        <input id="dueDate" class="form-control" type="date">
+        </div>
+          <label for="message-text" class="col-form-label">Offer Photo:</label>
+          <div class="input-group mb-3 ">
+         <input type="file" class="form-control" id="inputGroupFile02">
+        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+</div>
+        </form>
+      </div>
+      <div class="modal-footer d-flex">
+        <button type="button" class="btn close-btn" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn save-btn">Save Offer</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+        </div>
+          </div>
+  </div>
+</div>
+    </div>
+      </div>
+  
+      <div class="carousel-item  pb-5 ">
+      <div class="membership-item-inner d-flex justify-content-center">
+        <div class="card  mb-3" style="width: 18rem;">
+  <div class="card-body ">
+    <h5 class="card-title offes-title text-center mainFont fs-4 fw-bold">Create a New Membership Program</h5>
+    <div class="membership-icon mt-3 text-center">
+        <img src="./assets/img/Admin-Page/plus-removebg-preview.svg" width="75" height="70" alt="">
+      </div>
+      <div class="membership-description d-flex flex-column align-items-center gap-3 mt-5 pb-3">
+        <div class="add-new-class d-flex justify-content-center">
+          <button type="button" class="btn add-new-btn subColor1 fw-bold" data-bs-toggle="modal" data-bs-target="#membership-modal" data-bs-whatever="@mdo">Add New Membership</button>
+<div class="modal fade" id="membership-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">New Membership Program</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Membership Program Name</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Membership Program Description:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+          <label for="message-text" class="col-form-label">Membership Program Photo:</label>
+          <div class="input-group mb-3 ">
+         <input type="file" class="form-control" id="inputGroupFile02">
+        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+</div>
+        </form>
+      </div>
+      <div class="modal-footer d-flex">
+        <button type="button" class="btn close-btn" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn save-btn">Save Program</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+  </div>
+</div>
+    </div>
+      </div>
+  </div>
+    </div>
+    
+  <button class="carousel-control-prev arrow-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next arrow-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+      </div>
+     </section>
+
+
+
+
+    </main>
+
+    <footer class="footer mainFont">
+      <div class="container">
+        <div class="row d-flex flex-wrap">
+          <div class="col-md-4 d-flex">
+            <div class="left-side d-flex flex-column flex-wrap flex-grow-1">
+          <h2 class="py-2 ">Contact</h2>
+          <div class="whatsapp d-flex">
+            <img src="./assets/img/Icons/Footer/whatsapp.svg" width="30" height="30" alt="WhatsApp">
+          <span class="mt-1 ms-1"> 0599 107 194 </span>
+          </div>
+          <div class="facebook d-flex mt-2">
+            <img src="./assets/img/Icons/Footer/facebook.svg" width="30" height="30" alt="Facebook">
+          <a href="https://www.facebook.com/profile.php?id=100086404292432" class="mt-1 ms-1 text-black" target="_blank">Muscle Force</a>
+          </div>
+          <div class="address d-flex mt-2">
+            <img src="./assets/img/Icons/Footer/pin.svg" width="30" height="30"  alt="Locaation">
+            <address class="pt-1">Nablus- Beit Foreek- Osama Abu Hait Building- Besides Friendship Medicalcenter</address>
+          </div>
+          
+        </div>
+          </div>
+          
+          <div class="col-md-4 offset-md-4 d-flex">
+        <div class="right-side d-flex flex-column flex-wrap flex-grow-1">
+            <h2 class="py-2">Subscribe Now</h2>
+            <form class="d-flex">
+           <div class="mb-3">
+            <div class="form-floating ">
+           <input type="email" class="form-control bg-black" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput" class="text-light">Email address</label>
+            </div>
+         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+         <button type="submit" class="btn bg-black">Submit</button>
+         </form>
+        </div>
+      </div>
+        </div>
+        
+      </div>
+    </footer>
+    
+ <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
