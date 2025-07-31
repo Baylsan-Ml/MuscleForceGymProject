@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs</title>
+    <link rel="icon" href="./assets/img/public/logo-nobg.webp" />
+    <!-- CSS Bootstrap -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- costume CSS -->
+    <link rel="stylesheet" href="./assets/main.css"/>
+  </head>
+
+  <body class="Program-body">
+    <div class="Program-body-bg"></div>
+   
+    <nav class="navbar navbar-expand-lg position-sticky sticky-top top-0 px-3">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/img/public/logo-nobg.webp" width="25%" alt="...">
+      </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <svg xmlns="http://www.w3.org/2000/svg" height="20" width="25" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#000000" d="M96 64c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 160 0 64 0 160c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-64-32 0c-17.7 0-32-14.3-32-32l0-64c-17.7 0-32-14.3-32-32s14.3-32 32-32l0-64c0-17.7 14.3-32 32-32l32 0 0-64zm448 0l0 64 32 0c17.7 0 32 14.3 32 32l0 64c17.7 0 32 14.3 32 32s-14.3 32-32 32l0 64c0 17.7-14.3 32-32 32l-32 0 0 64c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-160 0-64 0-160c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32zM416 224l0 64-192 0 0-64 192 0z"/></svg>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="./Member.html">Who We Are</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Member.html"  rel="noopener noreferrer">Gallery</a>
+        </li>
+        <li class="nav-item dropdown" data-bs-theme="dark">
+          <a class="nav-link dropdown-toggle" href="./Classes.html" rel="noopener noreferrer" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Classes
+          </a>
+          <ul class="dropdown-menu bg-black">
+            <li><a class="dropdown-item " href="Classes.html" rel="noopener noreferrer" target="_blank" >Cardio</a></li>
+            <li><a class="dropdown-item" href="Classes.html" rel="noopener noreferrer" target="_blank">Weight Lifting</a></li>
+            <li><a class="dropdown-item" href="Classes.html" rel="noopener noreferrer" target="_blank"></a></li>
+            <li><a class="dropdown-item" href="Classes.html" rel="noopener noreferrer" target="_blank">Pilates</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Classes.html" rel="noopener noreferrer" target="_blank">HIIT</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" rel="noopener noreferrer" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Programs
+          </a>
+          <ul class="dropdown-menu bg-black" data-bs-theme="dark">
+            <li><a class="dropdown-item" href="#Program-A" rel="noopener noreferrer" >Program A</a></li>
+            <li><a class="dropdown-item" href="#Program-B" rel="noopener noreferrer" >Program B</a></li>
+            <li><a class="dropdown-item" href="#Program-C" rel="noopener noreferrer" >Program C</a></li>            
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="./Mempership.html" rel="noopener noreferrer" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Membership
+          </a>
+          <ul class="dropdown-menu bg-black" data-bs-theme="dark">
+            <li><a class="dropdown-item" href="./Offers.html" rel="noopener noreferrer" target="_blank">Daily</a></li>
+            <li><a class="dropdown-item" href="./Offers.html" rel="noopener noreferrer" target="_blank">3 Days/Week</a></li>
+            <li><a class="dropdown-item" href="./Offers.html" rel="noopener noreferrer" target="_blank">One Month</a></li>
+            <li><a class="dropdown-item" href="./Offers.html" rel="noopener noreferrer" target="_blank">Three Months</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="./Offers.html" rel="noopener noreferrer" target="_blank">Offers</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+
+      <form class="d-flex" role="search" data-bs-theme="dark">
+        <input class="search-btn form-control me-2 bg-black"  data-bs-theme="dark" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-sm btn-outline-secondary bg-black " type="button"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#fafafa" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></button>
+      </form>
+
+      <ul class="navbar-nav mb-2 ms-5">
+      <li class="nav-item dropdown" data-bs-theme="dark">
+          <a class="nav-link dropdown-toggle" href="#" rel="noopener noreferrer" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sign
+          </a>
+          <ul class="dropdown-menu bg-black " data-bs-theme="dark">
+            <li><a class="dropdown-item" href="./SignUp.html" target="_blank" rel="noopener noreferrer" target="_blank">SignUp</a></li>
+            <li><a class="dropdown-item" href="./Login.html" target="_blank" rel="noopener noreferrer" >Login</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+  
+</nav>
+
+<main class="mainFont">
+    <header class="Programs-Page-Header">
+        <div class="header-bg"></div>
+        <div class="header-content">
+    <h1 class="mainFont">Fitness Planner</h1>
+    <p class="subFont">Choose A Program and Start</p>
+    </div>
+
+</header>
+
+  <section class="Program-A py-5" id="Program-A">
+    <h2 class="text-center mb-5 mainColor">Program A</h2>
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="Program-content d-flex align-items-center flex-column gap-4">
+        <div class="upper-part d-flex justify-content-center flex-wrap ">
+          <div class="col-sm-6 col-md-3">
+            <div class="card ">
+  <div class="card-header text-center">
+    Saturday
+  </div>
+  <div class="card-body">
+    <h5 class="card-title text-center">Chest - Day</h5>
+    <ul class="Chest-list">
+      <li class="Chest-list">Straight Bar Free</li>
+      <li class="Chest-list">Upper Body Smith</li>
+      <li class="Chest-list">Flat dumbbell press</li>
+      <li class="Chest-list">Bench press</li>
+      <li class="Chest-list">Dumbbell butterfly</li>
+    </ul>
+  </div>
+  <div class="card-footer ">
+    Program A
+  </div>
+</div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="card ">
+  <div class="card-header text-center">
+    Sunday
+
+  </div>
+  <div class="card-body">
+    <h5 class="card-title text-center">Arms - Day</h5>
+    <ul class="Chest-list">
+      <li class="Chest-list">Barbell curl</li>
+      <li class="Chest-list">Hammer curl</li>
+      <li class="Chest-list">Cable wrist curl</li>
+      <li class="Chest-list">Triceps press-down</li>
+      <li class="Chest-list">Triceps extension</li>
+    </ul>
+  </div>
+  <div class="card-footer ">
+    Program A
+  </div>
+</div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="card ">
+  <div class="card-header text-center">
+    Monday
+  </div>
+  <div class="card-body">
+    <h5 class="card-title text-center">Shoulders - Day</h5>
+    <ul class="Chest-list">
+      <li class="Chest-list">Bar Smith</li>
+      <li class="Chest-list">Dumbbell reverse fly</li>
+      <li class="Chest-list">Front raise</li>
+      <li class="Chest-list">Seated overhead press</li>
+      <li class="Chest-list">Rear delt fly</li>
+    </ul>
+  </div>
+  <div class="card-footer ">
+    Program A
+  </div>
+</div>
+          </div>
+          <div class=" col-sm-6 col-md-3">
+            <div class="card ">
+  <div class="card-header text-center">
+    Wednesday
+  </div>
+  <div class="card-body">
+    <h5 class="card-title text-center">Back - Day</h5>
+    <ul class="Chest-list">
+      <li class="Chest-list">T-bar row with handle</li>
+      <li class="Chest-list">Wide-Grip Lat pulldown</li>
+      <li class="Chest-list">Row</li>
+      <li class="Chest-list">Lat pulldown</li>
+      <li class="Chest-list">Dumbbell bent over row</li>
+    </ul>
+  </div>
+  <div class="card-footer ">
+    Program A
+  </div>
+</div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="card ">
+  <div class="card-header text-center">
+    Thursday
+  </div>
+  <div class="card-body">
+    <h5 class="card-title text-center">Leg - Day</h5>
+    <ul class="Chest-list">
+      <li class="Chest-list">Squat</li>
+      <li class="Chest-list">Leg Extension</li>
+      <li class="Chest-list">Leg curl</li>
+      <li class="Chest-list">Lying hamstring curls</li>
+      <li class="Chest-list">Leg press</li>
+    </ul>
+  </div>
+  <div class="card-footer">
+    Program A
+  </div>
+</div>
+          </div>
+        </div>
+        <div class="Program-btn">
+          <a href="./SignUp.html" class="btn costume-btn subColor1 py-3">Choose Program</a>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="Program-B py-5" id="Program-B">
+    <h2 class="text-center mb-5 mainColor">Program B</h2>
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="Program-content d-flex align-items-center flex-column gap-4">
+        <div class="upper-part  d-flex justify-content-center flex-wrap">
+          <div class="col-sm-3 col-md-4">
+            <div class="card ">
+  <div class="card-header text-center">
+    Saturday
+  </div>
+  <div class="card-body">
+    <h5 class="card-title text-center">Chest - Day</h5>
+    <ul class="Chest-list">
+      <li class="Chest-list">Straight Bar Free</li>
+      <li class="Chest-list">Upper Body Smith</li>
+      <li class="Chest-list">Flat dumbbell press</li>
+      <li class="Chest-list">Bench press</li>
+      <li class="Chest-list">Dumbbell butterfly</li>
+    </ul>
+  </div>
+  <div class="card-footer ">
+    Program B
+  </div>
+</div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="card ">
+  <div class="card-header text-center">
+    Sunday
+  </div>
+  <div class="card-body">
+    <h5 class="card-title text-center">Arms - Day</h5>
+    <ul class="Chest-list">
+      <li class="Chest-list">Barbell curl</li>
+      <li class="Chest-list">Hammer curl</li>
+      <li class="Chest-list">Cable wrist curl</li>
+      <li class="Chest-list">Triceps press-down</li>
+      <li class="Chest-list">Triceps extension</li>
+    </ul>
+  </div>
+  <div class="card-footer ">
+    Program B
+  </div>
+</div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="card ">
+  <div class="card-header text-center">
+    Monday
+  </div>
+  <div class="card-body">
+    <h5 class="card-title text-center">Shoulders - Day</h5>
+    <ul class="Chest-list">
+      <li class="Chest-list">Bar Smith</li>
+      <li class="Chest-list">Dumbbell reverse fly</li>
+      <li class="Chest-list">Front raise</li>
+      <li class="Chest-list">Seated overhead press</li>
+      <li class="Chest-list">Rear delt fly</li>
+    </ul>
+  </div>
+  <div class="card-footer ">
+    Program B
+  </div>
+</div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="card ">
+  <div class="card-header text-center">
+    Wednesday
+  </div>
+  <div class="card-body">
+    <h5 class="card-title text-center">Back - Day</h5>
+    <ul class="Chest-list">
+      <li class="Chest-list">T-bar row with handle</li>
+      <li class="Chest-list">Wide-Grip Lat pulldown</li>
+      <li class="Chest-list">Row</li>
+      <li class="Chest-list">Lat pulldown</li>
+      <li class="Chest-list">Dumbbell bent over row</li>
+    </ul>
+  </div>
+  <div class="card-footer ">
+    Program B
+  </div>
+</div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="card ">
+  <div class="card-header text-center">
+    Thursday
+  </div>
+  <div class="card-body">
+    <h5 class="card-title text-center">Leg - Day</h5>
+    <ul class="Chest-list">
+      <li class="Chest-list">Squat</li>
+      <li class="Chest-list">Leg Extension</li>
+      <li class="Chest-list">Leg curl</li>
+      <li class="Chest-list">Lying hamstring curls</li>
+      <li class="Chest-list">Leg press</li>
+    </ul>
+  </div>
+  <div class="card-footer">
+    Program B
+  </div>
+</div>
+          </div>
+        </div>
+        <div class="Program-btn">
+          <a href="./SignUp.html" class="btn costume-btn subColor1 py-3">Choose Program</a>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="Program-C py-5" id="Program-C">
+    <h2 class="text-center mb-5 mainColor">Program C</h2>
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="Program-content d-flex align-items-center flex-column gap-4">
+        <div class="upper-part  d-flex justify-content-center flex-wrap">
+          <div class="col-sm-6 col-md-3">
+            <div class="card ">
+  <div class="card-header text-center">
+    Saturday
+  </div>
+  <div class="card-body">
+    <h5 class="card-title text-center">Chest - Day</h5>
+    <ul class="Chest-list">
+      <li class="Chest-list">Straight Bar Free</li>
+      <li class="Chest-list">Upper Body Smith</li>
+      <li class="Chest-list">Flat dumbbell press</li>
+      <li class="Chest-list">Bench press</li>
+      <li class="Chest-list">Dumbbell butterfly</li>
+    </ul>
+  </div>
+  <div class="card-footer ">
+    Program C
+  </div>
+</div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="card ">
+  <div class="card-header text-center">
+    Sunday
+  </div>
+  <div class="card-body">
+    <h5 class="card-title text-center">Arms - Day</h5>
+    <ul class="Chest-list">
+      <li class="Chest-list">Barbell curl</li>
+      <li class="Chest-list">Hammer curl</li>
+      <li class="Chest-list">Cable wrist curl</li>
+      <li class="Chest-list">Triceps press-down</li>
+      <li class="Chest-list">Triceps extension</li>
+    </ul>
+  </div>
+  <div class="card-footer ">
+    Program C
+  </div>
+</div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="card ">
+  <div class="card-header text-center">
+    Monday
+  </div>
+  <div class="card-body">
+    <h5 class="card-title text-center">Shoulders - Day</h5>
+    <ul class="Chest-list">
+      <li class="Chest-list">Bar Smith</li>
+      <li class="Chest-list">Dumbbell reverse fly</li>
+      <li class="Chest-list">Front raise</li>
+      <li class="Chest-list">Seated overhead press</li>
+      <li class="Chest-list">Rear delt fly</li>
+    </ul>
+  </div>
+  <div class="card-footer ">
+    Program C
+  </div>
+</div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="card ">
+  <div class="card-header text-center">
+    Wednesday
+  </div>
+  <div class="card-body">
+    <h5 class="card-title text-center">Back - Day</h5>
+    <ul class="Chest-list">
+      <li class="Chest-list">T-bar row with handle</li>
+      <li class="Chest-list">Wide-Grip Lat pulldown</li>
+      <li class="Chest-list">Row</li>
+      <li class="Chest-list">Lat pulldown</li>
+      <li class="Chest-list">Dumbbell bent over row</li>
+    </ul>
+  </div>
+  <div class="card-footer ">
+    Program C
+  </div>
+</div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="card ">
+  <div class="card-header text-center">
+    Thursday
+  </div>
+  <div class="card-body">
+    <h5 class="card-title text-center">Leg - Day</h5>
+    <ul class="Chest-list">
+      <li class="Chest-list">Squat</li>
+      <li class="Chest-list">Leg Extension</li>
+      <li class="Chest-list">Leg curl</li>
+      <li class="Chest-list">Lying hamstring curls</li>
+      <li class="Chest-list">Leg press</li>
+    </ul>
+  </div>
+  <div class="card-footer">
+    Program C
+  </div>
+</div>
+          </div>
+        </div>
+
+        <div class="Program-btn">
+          <a href="./SignUp.html" class="btn costume-btn subColor1 py-3">Choose Program</a>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+ <footer class="footer mainFont">
+      <div class="container">
+        <div class="row d-flex flex-wrap">
+          <div class="col-md-4 d-flex">
+            <div class="left-side d-flex flex-column flex-wrap flex-grow-1">
+          <h2 class="py-2 ">Contact</h2>
+          <div class="whatsapp d-flex">
+            <img src="./assets/img/Icons/Footer/whatsapp.svg" width="30" height="30" alt="WhatsApp">
+          <span class="mt-1 ms-1"> 0599 107 194 </span>
+          </div>
+          <div class="facebook d-flex mt-2">
+            <img src="./assets/img/Icons/Footer/facebook.svg" width="30" height="30" alt="Facebook">
+          <a href="https://www.facebook.com/profile.php?id=100086404292432" class="mt-1 ms-1 text-black" target="_blank">Muscle Force</a>
+          </div>
+          <div class="address d-flex mt-2">
+            <img src="./assets/img/Icons/Footer/pin.svg" width="30" height="30"  alt="Locaation">
+            <address class="pt-1">Nablus- Beit Foreek- Osama Abu Hait Building- Besides Friendship Medicalcenter</address>
+          </div>
+          
+        </div>
+          </div>
+          
+          <div class="col-md-4 offset-md-4 d-flex">
+        <div class="right-side d-flex flex-column flex-wrap flex-grow-1">
+            <h2 class="py-2">Subscribe Now</h2>
+            <form class="d-flex">
+           <div class="mb-3">
+            <div class="form-floating ">
+           <input type="email" class="form-control bg-black" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput" class="text-light">Email address</label>
+            </div>
+         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+         <button type="submit" class="btn bg-black">Submit</button>
+         </form>
+        </div>
+      </div>
+        </div>
+        
+      </div>
+    </footer>
+
+</main>  
+ <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
