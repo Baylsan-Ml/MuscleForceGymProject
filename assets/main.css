@@ -565,12 +565,28 @@ body{
     backdrop-filter: blur(8px);
     z-index: 1;
 }
+
 .show{
     opacity: 1;
     visibility: visible;
 }
 .costume-modal-content{
    width: 35%;
+}
+@media screen and (max-width:1200px){
+    .costume-modal-content{
+        width: 70%;
+    }
+}
+@media screen and (max-width:1050px){
+    .costume-modal-content{
+        width: 70%;
+    }
+}
+@media screen and (max-width:750px){
+    .costume-modal-content{
+        width: 100%;
+    }
 }
 .close_btn{
     position: absolute;
