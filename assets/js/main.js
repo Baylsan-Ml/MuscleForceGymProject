@@ -122,5 +122,15 @@ document.addEventListener("click", function(e){
     })
 /* Add New Program Modal End*/
 
+const navLinks= Array.from(document.querySelectorAll(".navbar .nav-item .nav-link"));
+console.log(navLinks);
 
+navLinks.forEach((navLink) => {
+    navLink.addEventListener("click", (e)=>{
+        navLinks.forEach((otherLinks)=>{
+            otherLinks.classList.remove('active');
+        })
+        e.target.classList.add('active');
+    })
+});
 
